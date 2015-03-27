@@ -1,0 +1,3 @@
+1. Pastikan sebelum tag <i? dan tag ?i> tidak ada spasi sama sekali. Pastikan kedua tag di atas menempel pada dinding kiri teks editor.
+
+2. Bila masih muncul error seperti diatas maka tambahkan code seperti ini di awal code : ob_start(); 
