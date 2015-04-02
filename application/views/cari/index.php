@@ -75,12 +75,36 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="port_kode;port_name;country_code;region_code";
 	xfunction_name="db_airport";
+}else if ($('#tipe').val()=='airline'){
+	xlebar="100px;150px;200px";
+	xjudul="Airline ID; Airline Name; Flight No.";
+	xalign="";
+	xfield="airline_id;airline_name;flight_no";
+	xfunction_name="db_airline";	
+}else if($('#tipe').val()=='air_export_master'){
+	xlebar="100px;150px";
+	xjudul="MAWB No;Date";
+	xalign="";
+	xfield="MAWB_no;order_date";
+	xfunction_name="db_air_export_master";
+}else if($('#tipe').val()=='air_import_master'){
+	xlebar="100px;150px";
+	xjudul="MAWB_no;Date";
+	xalign="";
+	xfield="MAWB_no;order_date";
+	xfunction_name="db_air_import_master";
 }else if  ($('#tipe').val()=='air_quot'){
 	xlebar="100px;350px;400px;450px";
 	xjudul="Quotation;Date;Attn;Re;Regards;Valid From;Valid Until;Customer ID; Customer Name; Sales Code; Sales Name; Term and Condition; Sales Notes; Manager Notes; Director Notes";
 	xalign="";
 	xfield="quot_id;date;attn;re;regards;valid_from;valid_until;cus_id;customer_name;sales_code;sales_name;term_cond;sales_note;manager_note;director_note";
 	xfunction_name="db_air_quotation";
+}else if($('#tipe').val()=='booking_cargo_air'){
+	xlebar="100px;150px";
+	xjudul="Order No; Order Date";
+	xalign="";
+	xfield="order_no;order_date";
+	xfunction_name="db_booking_cargo_air";
 }else if($('#tipe').val()=='booking_cargo_sea'){
 	xlebar="100px;100px";
 	xjudul="Order No;Order Date";
@@ -279,6 +303,12 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="quot_id;date;attn;re;regards;valid_from;valid_until;cus_id;customer_name;sales_code;sales_name;term_cond;sales_note;manager_note;director_note";
 	xfunction_name="db_sea_quotation";
+}else if($('#tipe').val()=='shipment_inbound_entry_air'){
+	xlebar="100px;150px";
+	xjudul="Order No;Order Date";
+	xalign="";
+	xfield="order_no;order_date";
+	xfunction_name="db_shipment_inbound_entry_air";
 }else if($('#tipe').val()=='shipment_inbound_entry_sea'){
 	xlebar="100px;100px";
 	xjudul="Order No;Order Date";
@@ -327,11 +357,17 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="vessel_code;vessel_name;vessel_type;flag";
 	xfunction_name="db_vessel";		
-}else if($('#tipe').val()=='carrier_booking_sea'){
-	xlebar="100px;100px";
-	xjudul="SI No;Order Date";
+}else if($('#tipe').val()=='carrier_booking_air'){
+	xlebar="100px;150px;200px";
+	xjudul="SI No;Order Date;Reference";
 	xalign="";
-	xfield="si_no;order_date";
+	xfield="si_no;order_date;reference";
+	xfunction_name="db_carrier_booking_air";
+}else if($('#tipe').val()=='carrier_booking_sea'){
+	xlebar="100px;150px;200px";
+	xjudul="SI No;Order Date;Reference";
+	xalign="";
+	xfield="si_no;order_date;reference";
 	xfunction_name="db_carrier_booking_sea";
 }else if($('#tipe').val()=='air_quot_commclass'){
 	xlebar="100px;350px";

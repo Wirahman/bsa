@@ -43,6 +43,18 @@ class Search extends CI_Model {
 		$query = $this->db->query($sql,array());
 		return $query->result_array();
 	}
+
+	function search_airline( $key = '' )
+	{
+		$sql="select * from gl_airline ";
+		if( $key!=''){
+			$sql.="where gl_airline.airline_id like '". $key ."%' or gl_airline.airline_name like '". $key ."%'";
+		}
+		$sql.="order by airline_id";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
 	
 	function search_air_quot( $key = '' )
 	{
@@ -56,6 +68,45 @@ class Search extends CI_Model {
 		return $query->result_array();
 	}
 	
+	function search_air_export_master( $key = '' )
+	{
+		$sql="select * from gl_air_export_master ";
+		if( $key!='' ){
+			$sql.="where (gl_air_export_master.MAWB_no like '". $key ."%' or  gl_air_export_master.MAWB_no like '". $key ."%') ";
+		}
+
+		$sql.="order by MAWB_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_air_import_master( $key = '' )
+	{
+		$sql="select * from gl_air_import_master ";
+		if( $key!='' ){
+			$sql.="where (gl_air_import_master.MAWB_no like '". $key ."%' or  gl_air_import_master.MAWB_no like '". $key ."%') ";
+		}
+
+		$sql.="order by MAWB_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_booking_cargo_air( $key = '' )
+	{
+		$sql="select * from gl_booking_cargo_air ";
+		if( $key!='' ){
+			$sql.="where (gl_booking_cargo_air.order_no like '". $key ."%' or  gl_booking_cargo_air.order_no like '". $key ."%') ";
+		}
+
+		$sql.="order by order_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	function search_booking_cargo_sea( $key = '' )
 	{
 		$sql="select * from gl_booking_cargo_sea ";
@@ -238,6 +289,19 @@ class Search extends CI_Model {
 		return $query->result_array();
 	}
 
+	function search_carrier_booking_air( $key= '' )
+	{
+		$sql="select * from gl_carrier_booking_air ";
+		if( $key!='' ){
+			$sql.="where (gl_carrier_booking_air.si_no like '". $key ."%' or gl_carrier_booking_air.si_no like '". $key ."%') ";
+		}
+
+		$sql.="order by si_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	function search_carrier_booking_sea( $key = '' )
 	{
 		$sql="select * from gl_carrier_booking_sea ";
@@ -409,6 +473,20 @@ class Search extends CI_Model {
 		$query = $this->db->query($sql,array());
 		return $query->result_array();
 	}
+	
+	function search_shipment_inbound_entry_air( $key = '' )
+	{
+		$sql="select * from gl_shipment_inbound_entry_air ";
+		if( $key!='' ){
+			$sql.="where (gl_shipment_inbound_entry_air.order_no like '". $key ."%' or  gl_shipment_inbound_entry_air.order_no like '". $key ."%') ";
+		}
+
+		$sql.="order by order_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	
 	function search_shipment_inbound_entry_sea( $key = '' )
 	{

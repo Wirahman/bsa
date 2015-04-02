@@ -135,13 +135,13 @@ class Tbooking_cargo_air extends CI_Model {
 		return $query->result_array();
 	}
 
-	//Agar variable obl_no bisa dipanggil kelas lain...
-	function obl_no( $key )
+	//Agar variable mawb_no bisa dipanggil kelas lain...
+	function mawb_no( $key )
 	{
-		$sql="select OBL_no from gl_booking_cargo_air where order_no='".$key."'";
+		$sql="select MAWB_no from gl_booking_cargo_air where order_no='".$key."'";
 		$query = $this->db->query($sql,array());
 		if( $query->num_rows > 0){
-			return $query->row('OBL_no');
+			return $query->row('MAWB_no');
 		} else {
 			return NULL;
 		}

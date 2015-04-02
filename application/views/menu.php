@@ -18,6 +18,10 @@
 						<i class="icon-book icon-white"></i> Master<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 														
+							<?php if( in_array( 'read_airline', $cap ) ){ ?>
+							<li><a href="<?php echo base_url('master/airline'); ?>" target="Airline">Airline</a></li>
+							<?php } ?>
+																					
 							<?php if( in_array( 'read_guest_book', $cap ) ){ ?>
 							<li><a href="<?php echo base_url('master/guest_book'); ?>" target="Guest_book">Buku Tamu</a></li>
 							<?php } ?>
@@ -30,10 +34,10 @@
 								<a href="#stock">Commodity</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_commodity', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/commodity'); ?>">Commodity</a></li>
+									<li><a href="<?php echo base_url('master/commodity'); ?>" target="Commodity">Commodity</a></li>
 									<?php }
                                      if( in_array( 'read_commodity_class', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/commodity_class'); ?>">Commodity Class</a></li>
+									<li><a href="<?php echo base_url('master/commodity_class'); ?>" target="Commodity Class">Commodity Class</a></li>
 									<?php }
                                      ?> 
 									 </ul>
@@ -67,10 +71,10 @@
 								<a href="#stock">Port</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_airport', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/airport'); ?>">Airport</a></li>
+									<li><a href="<?php echo base_url('master/airport'); ?>" target="Airport">Airport</a></li>
 									<?php }
                                      if( in_array( 'read_seaport', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/seaport'); ?>">Seaport</a></li>
+									<li><a href="<?php echo base_url('master/seaport'); ?>" target="Seaport">Seaport</a></li>
 									<?php }
                                      ?> 
 									 </ul>
@@ -84,13 +88,13 @@
 								<a href="#stock">Sales</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_sales', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/sales'); ?>">Sales</a></li>
+									<li><a href="<?php echo base_url('master/sales'); ?>" target="Sales">Sales</a></li>
 									<?php }
                                      if( in_array( 'read_sales_bon', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/sales_bon'); ?>">Sales Bonus</a></li>
+									<li><a href="<?php echo base_url('master/sales_bon'); ?>" target="Sales Bonus">Sales Bonus</a></li>
 									<?php }
 									 if( in_array( 'read_sales_com', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/sales_com'); ?>">Sales Commision</a></li>
+									<li><a href="<?php echo base_url('master/sales_com'); ?>" target="Sales Commission">Sales Commission</a></li>
 									<?php }
                                      ?> 
 									 </ul>
@@ -113,10 +117,10 @@
 								<a href="#stock">Publish Rate</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_publish_rate_air', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/publish_rate_air'); ?>">Publish Rate (Air)</a></li>
+									<li><a href="<?php echo base_url('master/publish_rate_air'); ?>" target="Publish Rate Air">Publish Rate (Air)</a></li>
 									<?php }
                                      if( in_array( 'read_publish_rate_sea', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/publish_rate_sea'); ?>">Publish Rate (Sea)</a></li>
+									<li><a href="<?php echo base_url('master/publish_rate_sea'); ?>" target="Publish Rate Sea">Publish Rate (Sea)</a></li>
 									<?php }
                                      ?> 
 									 </ul>
@@ -126,10 +130,10 @@
 								<a href="#stock">Selling Rate</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_selling_rate_air', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/selling_rate_air'); ?>">Selling Rate (Air)</a></li>
+									<li><a href="<?php echo base_url('master/selling_rate_air'); ?>" target="Selling Rate (Air)">Selling Rate (Air)</a></li>
 									<?php }
                                      if( in_array( 'read_selling_rate_sea', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('master/selling_rate_sea'); ?>">Selling Rate (Sea)</a></li>
+									<li><a href="<?php echo base_url('master/selling_rate_sea'); ?>" target="Selling Rate (Sea)">Selling Rate (Sea)</a></li>
 									<?php }
                                      ?> 
 									 </ul>
@@ -152,10 +156,10 @@
 								<a href="#stock">Quotation</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_air_quotation', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/air_quotation'); ?>">Quotation (Air)</a></li>
+									<li><a href="<?php echo base_url('transaksi/air_quotation'); ?>" target="Quotation (Air)">Quotation (Air)</a></li>
 									<?php }
                                      if( in_array( 'read_sea_quotation', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/sea_quotation'); ?>">Quotation (Sea)</a></li>
+									<li><a href="<?php echo base_url('transaksi/sea_quotation'); ?>" target="Quotation (Sea)">Quotation (Sea)</a></li>
 									<?php }
                                      ?> 
 									 </ul>
@@ -164,22 +168,40 @@
 							<li><a href="<?php echo base_url('transaksi/jurnal_umum'); ?>" target="Jurnal Umum">Jurnal Umum</a></li>
 							<?php } ?>
 							
-							<?php if( in_array( 'read_booking_cargo_sea', $cap ) ){ ?>
-							<li><a href="<?php echo base_url('transaksi/booking_cargo_sea'); ?>" target="Booking Cargo Sea">Booking Cargo Sea</a></li>
-							<?php } ?>
-							
-							<?php if( in_array( 'read_carrier_booking_sea', $cap ) ){ ?>
-							<li><a href="<?php echo base_url('transaksi/carrier_booking_sea'); ?>" target="Carrier Booking Sea">Carrier Booking Sea</a></li>
-							<?php } ?>
+							<li class="dropdown-submenu">
+								<a href="#stock">Booking Cargo</a>
+								<ul class="dropdown-menu submenu-show submenu-hide">
+								<?php if( in_array( 'read_booking_cargo_air', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/booking_cargo_air'); ?>" target="Booking Cargo Air">Booking Cargo (Air)</a></li>
+									<?php }
+                                     if( in_array( 'read_booking_cargo_sea', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/booking_cargo_sea'); ?>" target="Booking Cargo Sea">Booking Cargo (Sea)</a></li>
+									<?php }
+                                     ?> 
+									 </ul>
+							</li>
+		
+							<li class="dropdown-submenu">
+								<a href="#stock">Carrier Booking</a>
+								<ul class="dropdown-menu submenu-show submenu-hide">
+								<?php if( in_array( 'read_carrier_booking_air', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/carrier_booking_air'); ?>" target="Carrier Booking Air">Carrier Booking (Air)</a></li>
+									<?php }
+                                     if( in_array( 'read_carrier_booking_sea', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/carrier_booking_sea'); ?>" target="Carrier Booking Sea">Carrier Booking (Sea)</a></li>
+									<?php }
+                                     ?> 
+									 </ul>
+							</li>
 
 							<li class="dropdown-submenu">
 								<a href="#stock">Export Master</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_air_export_master', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/air_export_master'); ?>">Export Master (Air)</a></li>
+									<li><a href="<?php echo base_url('transaksi/air_export_master'); ?>" target="Export Master (Air)">Export Master (Air)</a></li>
 									<?php }
                                      if( in_array( 'read_sea_export_master', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/sea_export_master'); ?>">Export Master (Sea)</a></li>
+									<li><a href="<?php echo base_url('transaksi/sea_export_master'); ?>" target="Export Master (Sea)">Export Master (Sea)</a></li>
 									<?php }
                                      ?> 
 									 </ul>
@@ -189,10 +211,10 @@
 								<a href="#stock">Import Master</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_air_import_master', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/air_import_master'); ?>">Import Master (Air)</a></li>
+									<li><a href="<?php echo base_url('transaksi/air_import_master'); ?>" target="Import Master (Air)">Import Master (Air)</a></li>
 									<?php }
                                      if( in_array( 'read_sea_import_master', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/sea_import_master'); ?>">Import Master (Sea)</a></li>
+									<li><a href="<?php echo base_url('transaksi/sea_import_master'); ?>" target="Import Master (Sea)">Import Master (Sea)</a></li>
 									<?php }
                                      ?> 
 									 </ul>
@@ -202,10 +224,10 @@
 								<a href="#stock">Shipment Inbound Entry</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_shipment_inbound_entry_air', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/shipment_inbound_entry_air'); ?>">Shipment Inbound Entry (Air)</a></li>
+									<li><a href="<?php echo base_url('transaksi/shipment_inbound_entry_air'); ?>" target="Shipment Inbound Entry(Air)">Shipment Inbound Entry (Air)</a></li>
 									<?php }
                                      if( in_array( 'read_shipment_inbound_entry_sea', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/shipment_inbound_entry_sea'); ?>">Shipment Inbound Entry (Sea)</a></li>
+									<li><a href="<?php echo base_url('transaksi/shipment_inbound_entry_sea'); ?>" target="Shipment Inbound Entry(Sea)">Shipment Inbound Entry (Sea)</a></li>
 									<?php }
                                      ?> 
 									 </ul>

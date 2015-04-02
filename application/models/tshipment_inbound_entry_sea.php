@@ -131,6 +131,7 @@ class Tshipment_inbound_entry_sea extends CI_Model {
 		return $query->result_array();
 	}
 
+
 	//Agar variable obl_no bisa dipanggil kelas lain...
 	function obl_no( $key )
 	{

@@ -8,6 +8,8 @@ class Shipment_inbound_entry_sea extends CI_Controller {
 		$this->load->model( 'Tshipment_inbound_entry_sea', 'tshipment_inbound_entry_sea' );
 		$this->load->model( 'Tshipment_inbound_entry_sea_vessel', 'tshipment_inbound_entry_sea_vessel' );
 		$this->load->model( 'Tshipment_inbound_entry_sea_container', 'tshipment_inbound_entry_sea_container' );
+		$this->load->model( 'Tcarrier_booking_sea', 'tcarrier_booking_sea');
+		$this->load->model( 'Sea_quot', 'sea_quot');
 		$this->load->model( 'Search', 'search' );
 		$this->load->model( 'Searchtrn', 'searchtrn' );
 		$this->load->model( 'Tju_transaksi', 'tju_transaksi' );
@@ -199,6 +201,113 @@ class Shipment_inbound_entry_sea extends CI_Controller {
 			}
 		}
 	}
+
+
+	public function db_sea_import_master()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'key' ])){
+				$hasil = $this->search->search_sea_import_master( $_POST['key'], true );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function load_sea_import_master()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$this->load->model( 'Tsea_import_master', 'tsea_import_master' );
+				$hasil = $this->tsea_import_master->read( $_POST['id'] );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function db_read_HBL_no()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$hasil=$this->tsea_import_master->read( $_POST['id']);
+				if (!empty($hasil)){
+					echo $hasil['OBL_no'];
+				}else{
+					echo '';
+				}
+			}
+		}
+	}
+
+	public function db_sea_export_master()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'key' ])){
+				$hasil = $this->search->search_sea_export_master( $_POST['key'], true );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function load_sea_export_master()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$this->load->model( 'Tsea_export_master', 'tsea_export_master' );
+				$hasil = $this->tsea_export_master->read( $_POST['id'] );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function db_read_OBL_no()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$hasil=$this->tsea_export_master->read( $_POST['id']);
+				if (!empty($hasil)){
+					echo $hasil['OBL_no'];
+				}else{
+					echo '';
+				}
+			}
+		}
+	}
+	
+	public function db_sea_quotation()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'key' ])){
+				$hasil = $this->search->search_sea_quot( $_POST['key'], true );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function load_sea_quotation()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$this->load->model( 'Sea_quot', 'sea_quot' );
+				$hasil = $this->sea_quot->read( $_POST['id'] );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function db_read_quotation_ref()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$hasil=$this->sea_quot->read( $_POST['id']);
+				if (!empty($hasil)){
+					echo $hasil['re'];
+				}else{
+					echo '';
+				}
+			}
+		}
+	}
+
 
 	public function db_shipment_inbound_entry_sea()
 	{

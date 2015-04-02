@@ -18,17 +18,21 @@
 				</div>
 				
 			</div>
+
 			<div class="row">
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="HBL_no">H B/L No.</label>
 					<div class="controls">
-						<input type="text" obl="" name="HBL_no" id="HBL_no" />
+						<input type="text" hbl="" name="HBL_no" id="HBL_no" oldvalue="" browseobj="cari_HBL_no" />
+						<a style="display:none" class="add-on browse" id="cari_HBL_no" href="cari?ref=HBL_no&tipe=sea_import_master" title="Click for search HBL No"><i class="icon-search"></i></a>
 					</div>
 				</div>
+
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="OBL_no">O B/L No.</label>
 					<div class="controls">
-						<input type="text" obl="" maxlength="20"  name="OBL_no" id="OBL_no" />
+						<input type="text" obl="" oldvalue="" browseobj="cari_OBL_no" maxlength="20"  name="OBL_no" id="OBL_no" />
+						<a style="display:none" class="add-on browse" id="cari_OBL_no" href="cari?ref=OBL_no&tipe=sea_export_master" title="Click for Search OBL No"><i class="icon-search"></i></a>
 					</div>
 				</div>
 			</div>
@@ -36,13 +40,17 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="SI_ref">SI Ref</label>
 					<div class="controls">
-						<input type="text" siref="" maxlength="10" name="SI_ref" id="SI_ref" />
+						<input type="text" siref="" oldvalue="" browseobj="cari_si_ref" maxlength="10" name="SI_ref" id="SI_ref" />
+						<a style="display:none" class="add-on browse" id="cari_si_ref" href="cari?ref=SI_ref&tipe=carrier_booking_sea" title="Click for Search SI Reference"><i class="icon-search"></i></a>
 					</div>
 				</div>
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="quotation_ref">Quotation ref</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="quotation_ref" id="quotation_ref" oldvalue="" browseobj="cari_quotation_ref" /><a style="display:none" class="add-on browse" id="cari_quotation_ref" href="cari?ref=quotation_ref" title="Klik untuk mencari quotation ref"><i class="icon-search"></i></a></div>
+						<div class="input-append">
+							<input type="text" name="quotation_ref" id="quotation_ref" oldvalue="" browseobj="cari_quotation_ref" />
+							<a style="display:none" class="add-on browse" id="cari_quotation_ref" href="cari?ref=quotation_ref&tipe=sea_quot" title="Click for Search Quotation Reference"><i class="icon-search"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -623,6 +631,24 @@ $( document ).ready( function() {
 		}
 	});
 
+	$( '#HBL_no' ).bind( 'blur', function( ) {
+		if ($( '#HBL_no' ).val()===''){
+
+		}else{
+			if($(this).val()!==$(this).attr('oldvalue')){
+				$.post( 'db_read_HBL_no', { id: $( '#HBL_no' ).val() }, function( result ){
+					if( result === '' ){
+						$( '#HBL_no' ).val( "" );
+						var message = '<div class="alert alert-error" data-dismiss="alert"><a href="#" class="close">&times;</a><strong>Error!</strong> HBL No Not Found.</div>';
+						$('#alert').html( message );						
+					} else {
+
+					}
+				});
+			}
+		}
+	});
+
 	$( '#OBL_no' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13 ){
 			e.preventDefault();
@@ -630,6 +656,24 @@ $( document ).ready( function() {
 			
 			} else {
 				$( '#SI_ref' ).focus();
+			}
+		}
+	});
+
+	$( '#OBL_no' ).bind( 'blur', function( ) {
+		if ($( '#OBL_no' ).val()===''){
+
+		}else{
+			if($(this).val()!==$(this).attr('oldvalue')){
+				$.post( 'db_read_HBL_no', { id: $( '#OBL_no' ).val() }, function( result ){
+					if( result === '' ){
+						$( '#OBL_no' ).val( "" );
+						var message = '<div class="alert alert-error" data-dismiss="alert"><a href="#" class="close">&times;</a><strong>Error!</strong> OBL No Not Found.</div>';
+						$('#alert').html( message );						
+					} else {
+						
+					}
+				});
 			}
 		}
 	});
@@ -645,7 +689,23 @@ $( document ).ready( function() {
 		}
 	});
 
+	$( '#SI_ref' ).bind( 'blur', function( ) {
+		if ($( '#SI_ref' ).val()===''){
 
+		}else{
+			if($(this).val()!==$(this).attr('oldvalue')){
+				$.post( 'db_read_SI_ref', { id: $( '#SI_ref' ).val() }, function( result ){
+					if( result === '' ){
+						$( '#SI_ref' ).val( "" );
+						var message = '<div class="alert alert-error" data-dismiss="alert"><a href="#" class="close">&times;</a><strong>Error!</strong> SI Reference Not Found.</div>';
+						$('#alert').html( message );						
+					} else {
+						$( '#SI_ref' ).val( result );
+					}
+				});
+			}
+		}
+	});
 
 	$( '#quotation_ref' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13 ){
@@ -657,6 +717,25 @@ $( document ).ready( function() {
 			}
 		}
 	});
+
+	$( '#quotation_ref' ).bind( 'blur', function( ) {
+		if ($( '#quotation_ref' ).val()===''){
+
+		}else{
+			if($(this).val()!==$(this).attr('oldvalue')){
+				$.post( 'db_read_quotation_ref', { id: $( '#quotation_ref' ).val() }, function( result ){
+					if( result === '' ){
+						$( '#quotation_ref' ).val( "" );
+						var message = '<div class="alert alert-error" data-dismiss="alert"><a href="#" class="close">&times;</a><strong>Error!</strong> Sea Quotation Reference Not Found.</div>';
+						$('#alert').html( message );						
+					} else {
+						$( '#quotation_ref' ).val( result );
+					}
+				});
+			}
+		}
+	});
+
 
 	////////////////////////////////////////////////////////////////
 	//

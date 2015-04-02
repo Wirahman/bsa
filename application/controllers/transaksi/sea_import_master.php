@@ -257,6 +257,15 @@ class Sea_import_master extends CI_Controller {
 		}
 	}
 
+	public function db_lastid()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'tanggal' ] ) ){
+				echo $this->tsea_import_master->lastid( $_POST['tanggal'] );
+			}
+		}
+	}
+
 	public function db_sea_import_master()
 	{
 		if ($this->tank_auth->is_logged_in()){
@@ -445,9 +454,9 @@ class Sea_import_master extends CI_Controller {
 						}else{
 							$resulttrn['status']='Error';
 							$resulttrn['ket']='Data Detail Could Not be Saved. There is a Data Error or Server.';
-							$this->tbooking_cargo_sea->delete( $_POST['order_no']);
-							$this->tbooking_cargo_sea_vessel->clean( $_POST['order_no'] );
-							$this->tbooking_cargo_sea_container->clean( $_POST['order_no'] );
+							$this->tsea_import_master->delete( $_POST['order_no']);
+							$this->tsea_import_master_vessel->clean( $_POST['order_no'] );
+							$this->tsea_import_master_container->clean( $_POST['order_no'] );
 						}
 					}else{
 						$resulttrn['status']='Error';

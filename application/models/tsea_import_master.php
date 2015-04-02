@@ -84,18 +84,18 @@ class Tsea_import_master extends CI_Model {
 	 * @return	array
 	 */
 
-// Program tidak menggunakan function lastid
-// 	function lastid( $tanggal)
-// 	{
-// 		$pecah=explode('-',$tanggal);
-// 		$sql="select max(order_no) as order_no from gl_booking_cargo_sea where ((month(order_date)='".$pecah[1]."' and year(order_date)='".$pecah[2]."') or left(order_date,6)='".$pecah[2].$pecah[1]."' or left(order_date,4)=right('".$pecah[2].$pecah[1]."',4))";
-// 		$query = $this->db->query($sql,array());
-// 		if( $query->num_rows > 0 ){
-// 			return $query->row('order_no');
-// 		} else {
-// 			return NULL;
-// 		}
-// 	}
+
+	function lastid( $tanggal)
+	{
+		$pecah=explode('-',$tanggal);
+		$sql="select max(OBL_no) as OBL_no from gl_sea_import_master where ((month(date)='".$pecah[1]."' and year(date)='".$pecah[2]."') or left(date,6)='".$pecah[2].$pecah[1]."' or left(date,4)=right('".$pecah[2].$pecah[1]."',4))";
+		$query = $this->db->query($sql,array());
+		if( $query->num_rows > 0 ){
+			return $query->row('OBL_no');
+		} else {
+			return NULL;
+		}
+	}
 
 	// Load All Sea Import Master Data
 	function all()
