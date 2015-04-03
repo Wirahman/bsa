@@ -7,13 +7,13 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="id_jurnal">Kode Jurnal</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="id_jurnal" id="id_jurnal" oldvalue="" browseobj="cari_id_jurnal" /><a style="display:none" class="add-on browse" id="cari_id_jurnal" href="cari?ref=id_jurnal&tipe=jju" title="Klik untuk mencari kode jurnal"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="id_jurnal" id="id_jurnal" oldvalue="" browseobj="cari_id_jurnal" /><a style="display:none" class="add-on browse" id="cari_id_jurnal" href="cari/ref/id_jurnal/tipe/jju" title="Klik untuk mencari kode jurnal"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="id_transaksi">No. Transaksi</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="id_transaksi" id="id_transaksi" oldvalue="" browseobj="cari_id_transaksi" /><a style="display:none" class="add-on browse" id="cari_id_transaksi" href="cari?ref=id_transaksi&tipe=tju" title="Klik untuk mencari id transaksi"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="id_transaksi" id="id_transaksi" oldvalue="" browseobj="cari_id_transaksi" /><a style="display:none" class="add-on browse" id="cari_id_transaksi" href="cari/ref/id_transaksi/tipe/tju" title="Klik untuk mencari id transaksi"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 			</div>
@@ -160,7 +160,7 @@ function nomorbaru(){
 
 function add_row_jurnal_umum( i, action ){
 	var tabel = '<tr class="jurnal-umum-row" id="jurnal-umum-'+i+'">';
-	tabel += '<td><div class="input-append"><input style="width:120px" type="text" name="jurnal_umum['+i+'][id]" id="jurnal-umum-'+i+'-id" class="jurnal-umum-id id detail_transaksi" oldvalue="" browseobj="cari-jurnal-umum-'+i+'-id" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-jurnal-umum-'+i+'-id" href="cari?ref=jurnal-umum-'+i+'-id&tipe=acc" title="Klik untuk mencari id perkiraan"><i class="icon-search"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:120px" type="text" name="jurnal_umum['+i+'][id]" id="jurnal-umum-'+i+'-id" class="jurnal-umum-id id detail_transaksi" oldvalue="" browseobj="cari-jurnal-umum-'+i+'-id" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-jurnal-umum-'+i+'-id" href="cari/ref/jurnal-umum-'+i+'-id/tipe/acc" title="Klik untuk mencari id perkiraan"><i class="icon-search"></i></a></div></td>';
 	tabel += '<td><input style="width:200px" readonly type="text" name="jurnal_umum['+i+'][nama]" id="jurnal-umum-'+i+'-nama" class="jurnal-umum-nama detail_transaksi" /></td>';
 	tabel += '<td><input style="width:200px" maxlength="200" type="text" name="jurnal_umum['+i+'][keterangan]" id="jurnal-umum-'+i+'-keterangan" class="jurnal-umum-keterangan detail_transaksi" /></td>';
 	tabel += '<td><input style="width:150px;text-align:right" type="text" name="jurnal_umum['+i+'][debet]" id="jurnal-umum-'+i+'-debet" class="jurnal-umum-debet currency detail_transaksi" value="0" /></td>';
@@ -416,12 +416,12 @@ $( document ).ready( function() {
 	////////////////////////////////////////////////////////////////
 	$( '#cari_id_transaksi' ).live( 'click', function( e ){
 		var href = $( this ).attr( 'href' ).split( "&" );
-		$( this ).attr( 'href', href[ 0 ] +'&'+href[ 1 ] + '&cond1=' + $( "#id_jurnal" ).val() );
+		$( this ).attr( 'href', href[ 0 ] +'/'+href[ 1 ] + '/cond1/' + $( "#id_jurnal" ).val() );
 	});
 	$( '#id_transaksi' ).bind( 'focus', function( e ){
 		var asal = $( this ).attr( 'id' );
 		var href = $( '#cari_'+ asal ).attr( 'href' ).split( "&" );
-		$( '#cari_'+ asal ).attr( 'href', href[ 0 ] +'&'+href[ 1 ] + '&cond1=' + $( "#id_jurnal" ).val() );
+		$( '#cari_'+ asal ).attr( 'href', href[ 0 ] +'/'+href[ 1 ] + '/cond1/' + $( "#id_jurnal" ).val() );
 	});
 
 	$( '#id_jurnal' ).bind( 'blur', function( e ){

@@ -7,7 +7,7 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="order_no">Order No.</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="order_no" id="order_no" oldvalue="" browseobj="cari_order_no" /><a style="display:none" class="add-on browse" id="cari_order_no" href="cari?ref=order_no&tipe=booking_cargo_sea" title="Klik untuk mencari order number"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="order_no" id="order_no" oldvalue="" browseobj="cari_order_no" /><a style="display:none" class="add-on browse" id="cari_order_no" href="cari/ref/order_no/tipe/booking_cargo_sea" title="Klik untuk mencari order number"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 				<div class="control-group span6" style="height:15px">
@@ -24,7 +24,7 @@
 					<label class="control-label" for="HBL_no">H B/L No.</label>
 					<div class="controls">
 						<input type="text" hbl="" name="HBL_no" id="HBL_no" oldvalue="" browseobj="cari_HBL_no" />
-						<a style="display:none" class="add-on browse" id="cari_HBL_no" href="cari?ref=HBL_no&tipe=sea_import_master" title="Click for search HBL No"><i class="icon-search"></i></a>
+						<a style="display:none" class="add-on browse" id="cari_HBL_no" href="cari/ref/HBL_no/tipe/sea_import_master" title="Click for search HBL No"><i class="icon-search"></i></a>
 					</div>
 				</div>
 
@@ -32,7 +32,7 @@
 					<label class="control-label" for="OBL_no">O B/L No.</label>
 					<div class="controls">
 						<input type="text" obl="" oldvalue="" browseobj="cari_OBL_no" maxlength="20"  name="OBL_no" id="OBL_no" />
-						<a style="display:none" class="add-on browse" id="cari_OBL_no" href="cari?ref=OBL_no&tipe=sea_export_master" title="Click for Search OBL No"><i class="icon-search"></i></a>
+						<a style="display:none" class="add-on browse" id="cari_OBL_no" href="cari/ref/OBL_no/tipe/sea_export_master" title="Click for Search OBL No"><i class="icon-search"></i></a>
 					</div>
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 					<label class="control-label" for="SI_ref">SI Ref</label>
 					<div class="controls">
 						<input type="text" siref="" oldvalue="" browseobj="cari_si_ref" maxlength="10" name="SI_ref" id="SI_ref" />
-						<a style="display:none" class="add-on browse" id="cari_si_ref" href="cari?ref=SI_ref&tipe=carrier_booking_sea" title="Click for Search SI Reference"><i class="icon-search"></i></a>
+						<a style="display:none" class="add-on browse" id="cari_si_ref" href="cari/ref/SI_ref/tipe/carrier_booking_sea" title="Click for Search SI Reference"><i class="icon-search"></i></a>
 					</div>
 				</div>
 				<div class="control-group span6" style="height:15px">
@@ -49,7 +49,7 @@
 					<div class="controls">
 						<div class="input-append">
 							<input type="text" name="quotation_ref" id="quotation_ref" oldvalue="" browseobj="cari_quotation_ref" />
-							<a style="display:none" class="add-on browse" id="cari_quotation_ref" href="cari?ref=quotation_ref&tipe=sea_quot" title="Click for Search Quotation Reference"><i class="icon-search"></i></a>
+							<a style="display:none" class="add-on browse" id="cari_quotation_ref" href="cari/ref/quotation_ref/tipe/sea_quot" title="Click for Search Quotation Reference"><i class="icon-search"></i></a>
 						</div>
 					</div>
 				</div>
@@ -73,7 +73,7 @@
 						<div class="control-group span6">
 							<label class="control-label" for="shipper_id">Shipper ID :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="shipper_id" id="shipper_id" oldvalue="" browseobj="cari_shipper_id" /><a style="display:none" class="add-on browse" id="cari_shipper_id" href="cari?ref=shipper_id&tipe=customer&cond1=shipper" title="Klik untuk mencari shipper id"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="shipper_id" id="shipper_id" oldvalue="" browseobj="cari_shipper_id" /><a style="display:none" class="add-on browse" id="cari_shipper_id" href="cari/ref/shipper_id/tipe/customer/cond1/shipper" title="Klik untuk mencari shipper id"><i class="icon-search"></i></a></div>
 							</div>
 							<div class="controls">
 								<textarea type="text" name="keterangan_shipper" id="keterangan_shipper" class="input-xlarge" rows="3" /></textarea>
@@ -82,7 +82,7 @@
 						<div class="control-group span6">
 							<label class="control-label" for="cnee_id">Cnee ID :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="cnee_id" id="cnee_id" oldvalue="" browseobj="cari_cnee_id" /><a style="display:none" class="add-on browse" id="cari_cnee_id" href="cari?ref=cnee_id&tipe=customer&cond1=consignee" title="Klik untuk mencari consignee id"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="cnee_id" id="cnee_id" oldvalue="" browseobj="cari_cnee_id" /><a style="display:none" class="add-on browse" id="cari_cnee_id" href="cari/ref/cnee_id/tipe/customer/cond1/consignee" title="Klik untuk mencari consignee id"><i class="icon-search"></i></a></div>
 							</div>
 							<div class="controls">
 								<textarea type="text" name="keterangan_cnee" id="keterangan_cnee" class="input-xlarge" rows="3" /></textarea>
@@ -93,7 +93,7 @@
 						<div class="control-group span6">
 							<label class="control-label" for="notify_id">Notify ID :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="notify_id" id="notify_id" oldvalue="" browseobj="cari_notify_id" /><a style="display:none" class="add-on browse" id="cari_notify_id" href="cari?ref=notify_id&tipe=customer" title="Klik untuk mencari notify id"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="notify_id" id="notify_id" oldvalue="" browseobj="cari_notify_id" /><a style="display:none" class="add-on browse" id="cari_notify_id" href="cari/ref/notify_id/tipe/customer" title="Klik untuk mencari notify id"><i class="icon-search"></i></a></div>
 							</div>
 							<div class="controls">
 								<textarea type="text" name="keterangan_notify" id="keterangan_notify" class="input-xlarge" rows="3" /></textarea>
@@ -102,7 +102,7 @@
 						<div class="control-group span6">
 							<label class="control-label" for="agent_id">Agent ID :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="agent_id" id="agent_id" oldvalue="" browseobj="cari_agent_id" /><a style="display:none" class="add-on browse" id="cari_agent_id" href="cari?ref=agent_id&tipe=customer&cond1=agent" title="Klik untuk mencari agent id"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="agent_id" id="agent_id" oldvalue="" browseobj="cari_agent_id" /><a style="display:none" class="add-on browse" id="cari_agent_id" href="cari/ref/agent_id/tipe/customer/cond1/agent" title="Klik untuk mencari agent id"><i class="icon-search"></i></a></div>
 							</div>
 							<div class="controls">
 								<textarea type="text" name="keterangan_agent" id="keterangan_agent" class="input-xlarge" rows="3" /></textarea>
@@ -116,14 +116,14 @@
 						<div class="control-group span6" style="height:15px">
 							<label class="control-label" for="port_code">Port of Loading :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="port_kode_loading" id="port_kode_loading" oldvalue="" browseobj="cari_kode_seaport_loading" style="width:50px"/><a style="display:none" class="add-on browse" id="cari_kode_seaport_loading" href="cari?ref=port_kode_loading&tipe=sea" title="Klik untuk mencari Kode Seaport"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="port_kode_loading" id="port_kode_loading" oldvalue="" browseobj="cari_kode_seaport_loading" style="width:50px"/><a style="display:none" class="add-on browse" id="cari_kode_seaport_loading" href="cari/ref/port_kode_loading/tipe/sea" title="Klik untuk mencari Kode Seaport"><i class="icon-search"></i></a></div>
 								<input type="text" style="width:110px" readonly="readonly" name="nama_port_loading" id="nama_port_loading" />
 							</div>
 						</div>
 						<div class="control-group span6" style="height:15px">
 							<label class="control-label" for="port_code">Port of Departure :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="port_kode_departure" id="port_kode_departure" oldvalue="" browseobj="cari_kode_seaport_departure" style="width:50px"/><a style="display:none" class="add-on browse" id="cari_kode_seaport_departure" href="cari?ref=port_kode_departure&tipe=sea" title="Klik untuk mencari Kode Seaport"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="port_kode_departure" id="port_kode_departure" oldvalue="" browseobj="cari_kode_seaport_departure" style="width:50px"/><a style="display:none" class="add-on browse" id="cari_kode_seaport_departure" href="cari/ref/port_kode_departure/tipe/sea" title="Klik untuk mencari Kode Seaport"><i class="icon-search"></i></a></div>
 								<input type="text" style="width:110px" readonly="readonly" name="nama_port_departure" id="nama_port_departure" />
 							</div>
 						</div>
@@ -132,14 +132,14 @@
 						<div class="control-group span6" style="height:15px">
 							<label class="control-label" for="port_code">Port of Discharge :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="port_kode_discharge" id="port_kode_discharge" oldvalue="" browseobj="cari_kode_seaport_discharge" style="width:50px"/><a style="display:none" class="add-on browse" id="cari_kode_seaport_discharge" href="cari?ref=port_kode_discharge&tipe=sea" title="Klik untuk mencari Kode Seaport"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="port_kode_discharge" id="port_kode_discharge" oldvalue="" browseobj="cari_kode_seaport_discharge" style="width:50px"/><a style="display:none" class="add-on browse" id="cari_kode_seaport_discharge" href="cari/ref/port_kode_discharge/tipe/sea" title="Klik untuk mencari Kode Seaport"><i class="icon-search"></i></a></div>
 								<input type="text" style="width:110px" readonly="readonly" name="nama_port_discharge" id="nama_port_discharge" />
 							</div>
 						</div>
 						<div class="control-group span6" style="height:15px">
 							<label class="control-label" for="port_code">Port of Destination :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="port_kode_destination" id="port_kode_destination" oldvalue="" browseobj="cari_kode_seaport_destination" style="width:50px"/><a style="display:none" class="add-on browse" id="cari_kode_seaport_destination" href="cari?ref=port_kode_destination&tipe=sea" title="Klik untuk mencari Kode Seaport"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="port_kode_destination" id="port_kode_destination" oldvalue="" browseobj="cari_kode_seaport_destination" style="width:50px"/><a style="display:none" class="add-on browse" id="cari_kode_seaport_destination" href="cari/ref/port_kode_destination/tipe/sea" title="Klik untuk mencari Kode Seaport"><i class="icon-search"></i></a></div>
 								<input type="text" style="width:110px" readonly="readonly" name="nama_port_destination" id="nama_port_destination" />
 							</div>
 						</div>
@@ -180,7 +180,7 @@
 						<div class="control-group span6" style="height:15px">
 							<label class="control-label" for="shipping_line">Shipping Line</label>
 							<div class="controls">
-								<div class="input-append"><input style="width:110px" type="text" name="shipping_line" id="shipping_line" oldvalue="" browseobj="cari_shipping_line" /><a style="display:none" class="add-on browse" id="cari_shipping_line" href="cari?ref=shipping_line&tipe=customer&cond1=shippingline" title="Klik untuk mencari shipping line"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input style="width:110px" type="text" name="shipping_line" id="shipping_line" oldvalue="" browseobj="cari_shipping_line" /><a style="display:none" class="add-on browse" id="cari_shipping_line" href="cari/ref/shipping_line/tipe/customer/cond1/shippingline" title="Klik untuk mencari shipping line"><i class="icon-search"></i></a></div>
 								<input type="text" readonly="readonly"  name="shipping_line_name" id="shipping_line_name"/>
 								
 							</div>
@@ -188,7 +188,7 @@
 						<div class="control-group span6" style="height:15px">
 							<label class="control-label" for="co_loader">Co-Loader</label>
 							<div class="controls">
-								<div class="input-append"><input style="width:110px" type="text" name="co_loader" id="co_loader" oldvalue="" browseobj="cari_co_loader" /><a style="display:none" class="add-on browse" id="cari_co_loader" href="cari?ref=co_loader&tipe=customer&cond1=coloader" title="Klik untuk mencari co-loader"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input style="width:110px" type="text" name="co_loader" id="co_loader" oldvalue="" browseobj="cari_co_loader" /><a style="display:none" class="add-on browse" id="cari_co_loader" href="cari/ref/co_loader/tipe/customer/cond1/coloader" title="Klik untuk mencari co-loader"><i class="icon-search"></i></a></div>
 								<input type="text"   readonly="readonly"  name="co_loader_name" id="co_loader_name"/>
 							</div>
 						</div>
@@ -265,7 +265,7 @@
 						<div class="control-group span6" style ="height:15px">
 							<label class="control-label" for="commodity">Commodity :</label>
 							<div class="controls">
-								<div class="input-append"><input style="width:110px" type="text" name="commodity_code" id="commodity_code" oldvalue="" browseobj="cari_commodity_code" /><a style="display:none" class="add-on browse" id="cari_commodity_code" href="cari?ref=commodity_code&tipe=com" title="Klik untuk mencari commodity code"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input style="width:110px" type="text" name="commodity_code" id="commodity_code" oldvalue="" browseobj="cari_commodity_code" /><a style="display:none" class="add-on browse" id="cari_commodity_code" href="cari/ref/commodity_code/tipe/com" title="Klik untuk mencari commodity code"><i class="icon-search"></i></a></div>
 								<input type="text" readonly="readonly"  name="commodity_name" id="commodity_name"/>
 							</div>
 						</div>
@@ -297,7 +297,7 @@
 						<div class="control-group span6" style ="height:15px">
 							<label class="control-label" for="freight">Freight Term :</label>
 							<div class="controls">
-								<div class="input-append"><input style="width:110px" type="text" name="freight_term_code" id="freight_term_code" oldvalue="" browseobj="cari_freight_term_code" /><a style="display:none" class="add-on browse" id="cari_freight_term_code" href="cari?ref=freight_term_code&tipe=freight_term" title="Klik untuk mencari freight term code"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input style="width:110px" type="text" name="freight_term_code" id="freight_term_code" oldvalue="" browseobj="cari_freight_term_code" /><a style="display:none" class="add-on browse" id="cari_freight_term_code" href="cari/ref/freight_term_code/tipe/freight_term" title="Klik untuk mencari freight term code"><i class="icon-search"></i></a></div>
 								<input type="text" readonly="readonly"  name="freight_term_name" id="freight_term_name"/>
 							</div>
 						</div>
@@ -554,7 +554,7 @@ function nomorbaru()
 
 function add_row_vessel(i, action) {
 	var tabel = '<tr class="vessel-row" id="vessel-' + i + '">';
-	tabel  += '<td><div class="input-append"><input style="width:100px" type="text" name="vessel['+i+'][code]" id="vessel-'+i+'-code" class="vessel-code id detail_transaksi" oldvalue="" browseobj="cari-vessel-'+i+'-code" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-vessel-'+i+'-code" href="cari?ref=vessel-'+i+'-code&tipe=ves" title="Klik untuk mencari kode vessel"><i class="icon-search"></i></a></div></td>';
+	tabel  += '<td><div class="input-append"><input style="width:100px" type="text" name="vessel['+i+'][code]" id="vessel-'+i+'-code" class="vessel-code id detail_transaksi" oldvalue="" browseobj="cari-vessel-'+i+'-code" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-vessel-'+i+'-code" href="cari/ref/vessel-'+i+'-code/tipe/ves" title="Klik untuk mencari kode vessel"><i class="icon-search"></i></a></div></td>';
 	tabel  += '<td><input type="text" name="vessel[' + i + '][name]" style="text-align:right;width:100px" id="vessel-' + i + '-name" class="vessel-name detail_transaksi" readonly /></td>';
 	tabel  += '<td><input type="text" name="vessel[' + i + '][tipe]" style="text-align:right;width:100px" id="vessel-' + i + '-tipe" class="vessel-tipe detail_transaksi" readonly /></td>';
 	tabel  += '<td><input type="text" name="vessel[' + i + '][voyage]" style="text-align:right;width:100px" id="vessel-' + i + '-voyage" class="vessel-voyage detail_transaksi" /></td>';

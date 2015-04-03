@@ -9,7 +9,7 @@
 					<div class="controls">
 						<div class="input-append">
 						<input type="text" name="quot_id" id="quot_id" oldvalue="" browseobj="cari_quot_id" />
-						<a style="display:none" class="add-on browse" id="cari_quot_id" href="cari?ref=quot_id&tipe=air_quot" title="Klik untuk mencari Quotation Number">
+						<a style="display:none" class="add-on browse" id="cari_quot_id" href="cari/ref/quot_id/tipe/air_quot" title="Klik untuk mencari Quotation Number">
 						<i class="icon-search"></i></a></div>
 					</div>
 				</div>
@@ -28,7 +28,7 @@
 						<div class="input-append">
 							<input type="text" name="cus_id" id="cus_id" oldvalue="" browseobj="cari_kode_customer" style="width:50px" />
 							<input type="text" style="width:400px" readonly="readonly" name="customer_name" id="customer_name" />
-							<a style="display:none" class="add-on browse" id="cari_kode_customer" href="cari?ref=cus_id&tipe=customer" title="Klik untuk mencari Kode Customer">
+							<a style="display:none" class="add-on browse" id="cari_kode_customer" href="cari/ref/cus_id/tipe/customer" title="Klik untuk mencari Kode Customer">
 							<i class="icon-airrch"></i></a>				
 						</div>
 					</div>
@@ -76,7 +76,7 @@
 						<div class="input-append">
 							<input type="text" name="commodity" id="commodity" oldvalue="" browseobj="cari_commodity" style="width:50px" />
 							<input type="text" style="width:200px" readonly="readonly" name="commodity_class" id="commodity_class"  />
-							<a style="display:none" class="add-on browse" id="cari_commodity" href="cari?ref=commodity&tipe=commclass" title="Klik untuk mencari Commodity Class">
+							<a style="display:none" class="add-on browse" id="cari_commodity" href="cari/ref/commodity/tipe/commclass" title="Klik untuk mencari Commodity Class">
 							<i class="icon-search"></i></a>				
 						</div>
 					</div>
@@ -97,7 +97,7 @@
 						<div class="input-append">
 							<input type="text" name="freight" id="freight" oldvalue="" browseobj="cari_freight" style="width : 50px" />
 							<input type="text" style="width:200px" readonly="readonly" name="freight_desc" id="freight_desc"  />
-							<a style="display:none" class="add-on browse" id="cari_freight" href="cari?ref=freight&tipe=freight_term" title="Klik untuk mencari Freight Code">
+							<a style="display:none" class="add-on browse" id="cari_freight" href="cari/ref/freight/tipe/freight_term" title="Klik untuk mencari Freight Code">
 							<i class="icon-search"></i></a>				
 						</div>
 					</div>
@@ -117,7 +117,7 @@
 						<div class="input-append">
 							<input type="text" name="sales_code" id="sales_code" oldvalue="" browseobj="cari_sales_code" style="width : 50px" />
 							<input type="text" style="width:200px" readonly="readonly" name="nama_sales" id="nama_sales"  />
-							<a style="display:none" class="add-on browse" id="cari_sales_code" href="cari?ref=sales_code&tipe=sal" title="Klik untuk mencari Kode Sales">
+							<a style="display:none" class="add-on browse" id="cari_sales_code" href="cari/ref/sales_code/tipe/sal" title="Klik untuk mencari Kode Sales">
 							<i class="icon-search"></i></a>				
 						</div>
 					</div>
@@ -350,29 +350,29 @@ function get_selling_rate(num)
 function add_row_air_quotation( i, action ){
 	var tabel = '<tr class="air-quotation-row" id="air-quotation-'+i+'">';
 	
-	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][vendor_id]" id="air-quotation-'+i+'-vendor_id" class="air-quotation-vendor_id detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-vendor_id" /><a style="display:none" class="add-on browse vendor_id detail_jadwal" id="cari-air-quotation-'+i+'-vendor_id" href="cari?ref=air-quotation-'+i+'-vendor_id&tipe=br_air" title="Klik untuk mencari vendor_id"><i class="icon-airrch"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][vendor_id]" id="air-quotation-'+i+'-vendor_id" class="air-quotation-vendor_id detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-vendor_id" /><a style="display:none" class="add-on browse vendor_id detail_jadwal" id="cari-air-quotation-'+i+'-vendor_id" href="cari/ref/air-quotation-'+i+'-vendor_id/tipe/br_air" title="Klik untuk mencari vendor_id"><i class="icon-airrch"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="air_quotation['+i+'][vendor_name]" id="air-quotation-'+i+'-vendor_name" class="air-quotation-vendor_name detail_jadwal" /></td>';
 	
-	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][charges_code]" id="air-quotation-'+i+'-charges_code" class="air-quotation-charges_code charges_code detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-charges_code" /><a style="display:none" class="add-on browse charges_code detail_jadwal" id="cari-air-quotation-'+i+'-charges_code" href="cari?ref=air-quotation-'+i+'-charges_code&tipe=chra" title="Klik untuk mencari charges_code"><i class="icon-airrch"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][charges_code]" id="air-quotation-'+i+'-charges_code" class="air-quotation-charges_code charges_code detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-charges_code" /><a style="display:none" class="add-on browse charges_code detail_jadwal" id="cari-air-quotation-'+i+'-charges_code" href="cari/ref/air-quotation-'+i+'-charges_code/tipe/chra" title="Klik untuk mencari charges_code"><i class="icon-airrch"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="air_quotation['+i+'][charges_desc]" id="air-quotation-'+i+'-charges_desc" class="air-quotation-charges_desc detail_jadwal" /></td>';
 	
 	
-	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][code_awal]" id="air-quotation-'+i+'-code_awal" class="air-quotation-code_awal detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-code_awal" /><a style="display:none" class="add-on browse code_awal detail_jadwal" id="cari-air-quotation-'+i+'-code_awal" href="cari?ref=air-quotation-'+i+'-code_awal&tipe=air" title="Klik untuk mencari code_awal"><i class="icon-airrch"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][code_awal]" id="air-quotation-'+i+'-code_awal" class="air-quotation-code_awal detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-code_awal" /><a style="display:none" class="add-on browse code_awal detail_jadwal" id="cari-air-quotation-'+i+'-code_awal" href="cari/ref/air-quotation-'+i+'-code_awal/tipe/air" title="Klik untuk mencari code_awal"><i class="icon-airrch"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="air_quotation['+i+'][port_awal]" id="air-quotation-'+i+'-port_awal" class="air-quotation-port_awal detail_jadwal" /></td>';
 	
 	
-	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][code_akhir]" id="air-quotation-'+i+'-code_akhir" class="air-quotation-code_akhir detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-code_akhir" /><a style="display:none" class="add-on browse code_akhir detail_jadwal" id="cari-air-quotation-'+i+'-code_akhir" href="cari?ref=air-quotation-'+i+'-code_akhir&tipe=air" title="Klik untuk mencari code_akhir"><i class="icon-airrch"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][code_akhir]" id="air-quotation-'+i+'-code_akhir" class="air-quotation-code_akhir detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-code_akhir" /><a style="display:none" class="add-on browse code_akhir detail_jadwal" id="cari-air-quotation-'+i+'-code_akhir" href="cari/ref/air-quotation-'+i+'-code_akhir/tipe/air" title="Klik untuk mencari code_akhir"><i class="icon-airrch"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="air_quotation['+i+'][port_akhir]" id="air-quotation-'+i+'-port_akhir" class="air-quotation-port_akhir detail_jadwal" /></td>';
 	
-	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][unit_code]" id="air-quotation-'+i+'-unit_code" class="air-quotation-unit_code detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-unit_code" /><a style="display:none" class="add-on browse unit_code detail_jadwal" id="cari-air-quotation-'+i+'-unit_code" href="cari?ref=air-quotation-'+i+'-unit_code&tipe=unit" title="Klik untuk mencari unit_code"><i class="icon-airrch"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][unit_code]" id="air-quotation-'+i+'-unit_code" class="air-quotation-unit_code detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-unit_code" /><a style="display:none" class="add-on browse unit_code detail_jadwal" id="cari-air-quotation-'+i+'-unit_code" href="cari/ref/air-quotation-'+i+'-unit_code/tipe/unit" title="Klik untuk mencari unit_code"><i class="icon-airrch"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="air_quotation['+i+'][unit_desc]" id="air-quotation-'+i+'-unit_desc" class="air-quotation-unit_desc detail_jadwal" /></td>';
 		
-	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][currency_code]" id="air-quotation-'+i+'-currency_code" class="air-quotation-currency_code detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-currency_code" /><a style="display:none" class="add-on browse currency_code detail_jadwal" id="cari-air-quotation-'+i+'-currency_code" href="cari?ref=air-quotation-'+i+'-currency_code&tipe=cur" title="Klik untuk mencari currency_code"><i class="icon-airrch"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:50px" type="text" name="air_quotation['+i+'][currency_code]" id="air-quotation-'+i+'-currency_code" class="air-quotation-currency_code detail_jadwal" oldvalue="" browseobj="cari-air-quotation-'+i+'-currency_code" /><a style="display:none" class="add-on browse currency_code detail_jadwal" id="cari-air-quotation-'+i+'-currency_code" href="cari/ref/air-quotation-'+i+'-currency_code/tipe/cur" title="Klik untuk mencari currency_code"><i class="icon-airrch"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="air_quotation['+i+'][currency_desc]" id="air-quotation-'+i+'-currency_desc" class="air-quotation-currency_desc detail_jadwal" /></td>';
 	
