@@ -10,7 +10,7 @@
 						<div class="input-append"><input maxlength="5"  style="width:100px" type="text" name="currency_code"
 						id="currency_code" oldvalue="" browseobj="cari_kode_currency" class="span2"/>
 						<a style="display:none" class="add-on browse" id="cari_kode_currency"
-						href="cari?ref=currency_code&tipe=cur" 
+						href="cari/ref/currency_code/tipe/cur" 
 						title="Klik untuk mencari Kode currency">
 						<i class="icon-search"></i></a></div>
 					</div>

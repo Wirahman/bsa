@@ -73,7 +73,7 @@ if( isset( $capabilities ) ){
 $cap = unserialize( $user_cap );
 ?>
 <div class="container">
-	<p><a href="<?php echo base_url('fasilitas/user'); ?>" class="btn">&lt;&lt; Kembali ke halaman sebelumnya</a></p>
+	<p><a href="<?php echo site_url('fasilitas/user'); ?>" class="btn">&lt;&lt; Kembali ke halaman sebelumnya</a></p>
 	<?php echo ( isset( $message ) ) ? $message : ''; ?>
 	<?php echo form_open( $this->uri->uri_string() ); ?>
 	<input type="hidden" name="id" value="<?php echo $id; ?>"/>

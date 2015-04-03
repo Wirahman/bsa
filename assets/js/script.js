@@ -57,7 +57,11 @@ function show_alert(success, sentence){
 	$('#alert').html( message );
 }
 
-function format_date( d, format = 'dd-mm-yyyy' ){
+function format_date( d, format ){
+    if (format == null || format == '') {
+        format = 'dd-mm-yyyy';
+    }
+
 	if (d!=null && d!=''){
 		tanggal = d.split( "-" );
 		if( format === 'dd-mm-yyyy' ){

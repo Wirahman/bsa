@@ -10,7 +10,7 @@
 						<div class="input-append"><input maxlength="5"  style="width:75px" type="text" name="sales_code"
 						id="sales_code" oldvalue="" browseobj="cari_kode_sales" />
 						<a style="display:none" class="add-on browse" id="cari_kode_sales"
-						href="cari?ref=sales_code&tipe=sal" 
+						href="cari/ref/sales_code/tipe/sal" 
 						title="Klik untuk mencari Kode sales">
 						<i class="icon-search"></i></a></div>
 					</div>

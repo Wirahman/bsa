@@ -7,7 +7,7 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="vessel_code">Vessel Code :</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="vessel_code" id="vessel_code" oldvalue="" browseobj="cari_kode_vessel" /><a style="display:none" class="add-on browse" id="cari_kode_vessel" href="cari?ref=vessel_code&tipe=ves" title="Klik untuk mencari Kode Vessel"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="vessel_code" id="vessel_code" oldvalue="" browseobj="cari_kode_vessel" /><a style="display:none" class="add-on browse" id="cari_kode_vessel" href="cari/ref/vessel_code/tipe/ves" title="Klik untuk mencari Kode Vessel"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 			</div>

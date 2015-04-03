@@ -10,7 +10,7 @@
 						<div class="input-append">
 							<input type="text" name="kode_dev" id="kode_dev" oldvalue="" browseobj="cari_kode_dev"/>
 							<input type="text" style="width:440px" readonly="readonly" name="nama_dev" id="nama_dev" />
-							<a style="display:none" class="add-on browse" id="cari_kode_dev" href="cari?ref=kode_dev&tipe=dev" title="Klik untuk mencari Devisi"><i class="icon-search"></i></a>				
+							<a style="display:none" class="add-on browse" id="cari_kode_dev" href="cari/ref/kode_dev/tipe/dev" title="Klik untuk mencari Devisi"><i class="icon-search"></i></a>				
 						</div>
 					</div>
 				</div>
@@ -19,7 +19,7 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="no_invoice">No Transaksi</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="no_invoice" id="no_invoice" oldvalue="" browseobj="cari_no_invoice"/><a style="display:none" class="add-on browse" id="cari_no_invoice" href="cari?ref=no_invoice&tipe=sj" title="Klik untuk mencari No Transaksi"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="no_invoice" id="no_invoice" oldvalue="" browseobj="cari_no_invoice"/><a style="display:none" class="add-on browse" id="cari_no_invoice" href="cari/ref/no_invoice/tipe/sj" title="Klik untuk mencari No Transaksi"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 				<div class="control-group span6"style="height:15px">
@@ -33,7 +33,7 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="no_so">No. S.O</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="no_so" id="no_so" oldvalue="" browseobj="cari_no_so"/><a style="display:none" class="add-on browse" id="cari_no_so" href="cari?ref=no_so&tipe=so" title="Klik untuk mencari No Sales Order"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="no_so" id="no_so" oldvalue="" browseobj="cari_no_so"/><a style="display:none" class="add-on browse" id="cari_no_so" href="cari/ref/no_so/tipe/so" title="Klik untuk mencari No Sales Order"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 				<div class="control-group span6"style="height:15px">
@@ -225,7 +225,7 @@ return hasil;
 
 function add_row_tabel_surat_jalan( i, action ){
 	var tabel = '<tr class="surat_jalan-row" id="surat_jalan-'+i+'">';
-	tabel += '<td><div class="input-append"><input style="width:90px" type="text" name="surat_jalan['+i+'][kode]" id="surat_jalan-'+i+'-kode" oldvalue="" browseobj="cari-surat_jalan-'+i+'-kode" xclass="surat_jalan-kode" class="surat_jalan-kode detail_transaksi" maxlength="10"/><input style="width:90px;display:none" type="text" name="surat_jalan['+i+'][no_urut]" id="surat_jalan-'+i+'-no_urut" class="surat_jalan-no_urut detail_transaksi"/><a style="display:none" class="add-on browse cari-surat_jalan-kode detail_transaksi" id="cari-surat_jalan-'+i+'-kode" href="cari?ref=surat_jalan-'+i+'-kode&tipe=stock_so" title="Klik untuk mencari kode barang"><i class="icon-search"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:90px" type="text" name="surat_jalan['+i+'][kode]" id="surat_jalan-'+i+'-kode" oldvalue="" browseobj="cari-surat_jalan-'+i+'-kode" xclass="surat_jalan-kode" class="surat_jalan-kode detail_transaksi" maxlength="10"/><input style="width:90px;display:none" type="text" name="surat_jalan['+i+'][no_urut]" id="surat_jalan-'+i+'-no_urut" class="surat_jalan-no_urut detail_transaksi"/><a style="display:none" class="add-on browse cari-surat_jalan-kode detail_transaksi" id="cari-surat_jalan-'+i+'-kode" href="cari/ref/surat_jalan-'+i+'-kode/tipe/stock_so" title="Klik untuk mencari kode barang"><i class="icon-search"></i></a></div></td>';
 	tabel += '<td><input readonly="readonly" style="width:295px" type="text" name="surat_jalan['+i+'][nama_barang]" id="surat_jalan-'+i+'-nama_barang" xclass="surat_jalan-nama_barang" class="surat_jalan-nama_barang detail_transaksi" maxlength="250" /></td>';
 	tabel += '<td><div class="input-append"><input style="width:50px" type="text" readonly="readonly" name="surat_jalan['+i+'][satuan]" id="surat_jalan-'+i+'-satuan" xclass="surat_jalan-satuan" class="surat_jalan-satuan detail_transaksi" /></div></td>';
 	tabel += '<td><input style="text-align:right;width:60px" readonly type="text" name="surat_jalan['+i+'][qty_so]" id="surat_jalan-'+i+'-qty_so" value="0" xclass="surat_jalan-qty_so" class="surat_jalan-qty_so detail_transaksi currency" /></td>';
@@ -351,16 +351,16 @@ $( '#no_invoice' ).bind( 'blur', function( ) {
 	$( '#no_invoice' ).bind( 'focus', function( e ) {
 		var x=$(this).attr("id");
 		if ($("#kode_dev").val()){
-			$('#cari_'+ x).attr("href","cari?ref=no_invoice&tipe=sj&cond1="+ $("#kode_dev").val());
+			$('#cari_'+ x).attr("href","cari/ref/no_invoice/tipe/sj/cond1/"+ $("#kode_dev").val());
 		}else{
-			$('#cari_'+ x).attr("href","cari?ref=no_invoice&tipe=sj");
+			$('#cari_'+ x).attr("href","cari/ref/no_invoice/tipe/sj");
 		}
 	});
 	$( '#cari_no_invoice' ).bind( 'focus', function( e ) {
 		if ($("#kode_dev").val()){
-			$(this).attr("href","cari?ref=no_invoice&tipe=sj&cond1="+ $("#kode_dev").val());
+			$(this).attr("href","cari/ref/no_invoice/tipe/sj/cond1?"+ $("#kode_dev").val());
 		}else{
-			$(this).attr("href","cari?ref=no_invoice&tipe=sj");
+			$(this).attr("href","cari/ref/no_invoice/tipe/sj");
 		}
 	});
 

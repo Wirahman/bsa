@@ -10,7 +10,7 @@
 						<div class="input-append"><input type="text" name="term_code"
 						id="term_code" oldvalue="" browseobj="cari_kode_freight_term" style="width:50px" />
 						<a style="display:none" class="add-on browse" id="cari_kode_freight_term"
-						href="cari?ref=term_code&tipe=freight_term" 
+						href="cari/ref/term_code/tipe/freight_term" 
 						title="Klik untuk mencari Kode freight_term">
 						<i class="icon-search"></i></a></div>
 					</div>

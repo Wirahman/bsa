@@ -6,7 +6,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="<?php echo base_url(); ?>">PT. Binar Sinar Amity</a>
+			<a class="brand" href="<?php echo site_url(); ?>">PT. Binar Sinar Amity</a>
 		</div>
 	</div>
 </div>

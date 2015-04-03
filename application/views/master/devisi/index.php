@@ -7,7 +7,7 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="kode_devisi">Kode Devisi</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="kode_devisi" id="kode_devisi" oldvalue="" browseobj="cari_kode_devisi" /><a style="display:none" class="add-on browse" id="cari_kode_devisi" href="cari?ref=kode_devisi&tipe=dev" title="Klik untuk mencari Kode Devisi"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="kode_devisi" id="kode_devisi" oldvalue="" browseobj="cari_kode_devisi" /><a style="display:none" class="add-on browse" id="cari_kode_devisi" href="cari/ref/kode_devisi/tipe/dev" title="Klik untuk mencari Kode Devisi"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 			</div>
@@ -26,7 +26,7 @@
 						<div class="input-append">
 							<input type="text" name="kode_kepala" id="kode_kepala" oldvalue="" browseobj="cari_kode_kepala" />
 							<input type="text" style="width:440px" readonly="readonly" name="nama_kepala" id="nama_kepala" />
-							<a style="display:none" class="add-on browse" id="cari_kode_kepala" href="cari?ref=kode_kepala&tipe=karyawan" title="Klik untuk mencari Kepala Devisi"><i class="icon-search"></i></a>				
+							<a style="display:none" class="add-on browse" id="cari_kode_kepala" href="cari/ref/kode_kepala/tipe/karyawan" title="Klik untuk mencari Kepala Devisi"><i class="icon-search"></i></a>				
 						</div>
 					</div>
 				</div>

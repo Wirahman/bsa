@@ -7,7 +7,7 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="com_id">Company ID :</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="com_id" id="com_id" oldvalue="" browseobj="cari_kode_company" style="width:50px" /><a style="display:none" class="add-on browse" id="cari_kode_company" href="cari?ref=com_id&tipe=company" title="Klik untuk mencari Kode Company"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="com_id" id="com_id" oldvalue="" browseobj="cari_kode_company" style="width:50px" /><a style="display:none" class="add-on browse" id="cari_kode_company" href="cari/ref/com_id/tipe/company" title="Klik untuk mencari Kode Company"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 				
@@ -77,7 +77,7 @@
 						<div class="input-append">
 							<input type="text" name="country_code" id="country_code" oldvalue="" browseobj="cari_country_code" style="width : 50px" />
 							<input type="text" style="width:200px" readonly="readonly" name="country_name" id="country_name"  />
-							<a style="display:none" class="add-on browse" id="cari_country_code" href="cari?ref=country_code&tipe=count" title="Klik untuk mencari Kode Country"><i class="icon-search"></i></a>				
+							<a style="display:none" class="add-on browse" id="cari_country_code" href="cari/ref/country_code/tipe/count" title="Klik untuk mencari Kode Country"><i class="icon-search"></i></a>				
 						</div>
 					</div>
 				</div>
@@ -88,7 +88,7 @@
 						<div class="input-append">
 							<input type="text" name="region_code" id="region_code" oldvalue="" browseobj="cari_kode_region" style="width:50px" />
 							<input type="text" style="width:150px" readonly="readonly" name="region_name" id="region_name" />
-							<a style="display:none" class="add-on browse" id="cari_kode_region" href="cari?ref=region_code&tipe=reg" title="Klik untuk mencari Kode Region"><i class="icon-airrch"></i></a>				
+							<a style="display:none" class="add-on browse" id="cari_kode_region" href="cari/ref/region_code/tipe/reg" title="Klik untuk mencari Kode Region"><i class="icon-airrch"></i></a>				
 						</div>
 					</div>
 				</div>
@@ -101,7 +101,7 @@
 						<div class="input-append">
 							<input type="text" name="city_code" id="city_code" oldvalue="" browseobj="cari_city_code" style="width : 50px" />
 							<input type="text" style="width:200px" readonly="readonly" name="city_name" id="city_name" />
-							<a style="display:none" class="add-on browse" id="cari_city_code" href="cari?ref=city_code&tipe=city" title="Klik untuk mencari Kode City"><i class="icon-search"></i></a>				
+							<a style="display:none" class="add-on browse" id="cari_city_code" href="cari/ref/city_code/tipe/city" title="Klik untuk mencari Kode City"><i class="icon-search"></i></a>				
 						</div>
 					</div>
 				</div>

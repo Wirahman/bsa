@@ -10,7 +10,7 @@
 						<div class="input-append"><input type="text" name="city_code"
 						id="city_code" oldvalue="" browseobj="cari_kode_city" style="width:50px"/>
 						<a style="display:none" class="add-on browse" id="cari_kode_city"
-						href="cari?ref=city_code&tipe=city" 
+						href="cari/ref/city_code/tipe/city" 
 						title="Klik untuk mencari Kode City">
 						<i class="icon-search"></i></a></div>
 					</div>

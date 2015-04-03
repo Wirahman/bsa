@@ -8,7 +8,7 @@
 					<label class="control-label" for="vendor_id">Vendor ID: </label>
 					<div class="controls">
 						<div class="input-append"><input type="text" name="vendor_id" id="vendor_id" oldvalue="" browseobj="cari_vendor_id" style="width:70px" />
-						<a style="display:none" class="add-on browse" id="cari_vendor_id" href="cari?ref=vendor_id&tipe=pr_sea" title="Klik untuk mencari kode Vendor Id">
+						<a style="display:none" class="add-on browse" id="cari_vendor_id" href="cari/ref/vendor_id/tipe/pr_sea" title="Klik untuk mencari kode Vendor Id">
 						<i class="icon-search"></i></a></div>
 					</div>
 				</div>
@@ -192,23 +192,23 @@ function add_row_publish_rate_sea( i, action ){
 	
 	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][date_until]" id="publish-rate-sea-'+i+'-date_until" class="publish-rate-sea-date_until tanggal" /></td>';
 	
-	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][charges_code]" id="publish-rate-sea-'+i+'-charges_code" class="publish-rate-sea-charges_code charges_code detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-charges_code" /><a style="display:none" class="add-on browse charges_code detail_jadwal" id="cari-publish-rate-sea-'+i+'-charges_code" href="cari?ref=publish-rate-sea-'+i+'-charges_code&tipe=chra" title="Klik untuk mencari charges_code"><i class="icon-search"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][charges_code]" id="publish-rate-sea-'+i+'-charges_code" class="publish-rate-sea-charges_code charges_code detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-charges_code" /><a style="display:none" class="add-on browse charges_code detail_jadwal" id="cari-publish-rate-sea-'+i+'-charges_code" href="cari/ref/publish-rate-sea-'+i+'-charges_code/tipe/chra" title="Klik untuk mencari charges_code"><i class="icon-search"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="publish_rate_sea['+i+'][charges_description]" id="publish-rate-sea-'+i+'-charges_description" class="publish-rate-sea-charges_description detail_jadwal" /></td>';
 		
-	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][code_awal]" id="publish-rate-sea-'+i+'-code_awal" class="publish-rate-sea-code_awal detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-code_awal" /><a style="display:none" class="add-on browse code_awal detail_jadwal" id="cari-publish-rate-sea-'+i+'-code_awal" href="cari?ref=publish-rate-sea-'+i+'-code_awal&tipe=sea" title="Klik untuk mencari code_awal"><i class="icon-search"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][code_awal]" id="publish-rate-sea-'+i+'-code_awal" class="publish-rate-sea-code_awal detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-code_awal" /><a style="display:none" class="add-on browse code_awal detail_jadwal" id="cari-publish-rate-sea-'+i+'-code_awal" href="cari/ref/publish-rate-sea-'+i+'-code_awal/tipe/sea" title="Klik untuk mencari code_awal"><i class="icon-search"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="publish_rate_sea['+i+'][port_awal]" id="publish-rate-sea-'+i+'-port_awal" class="publish-rate-sea-port_awal detail_jadwal" /></td>';
 		
-	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][code_akhir]" id="publish-rate-sea-'+i+'-code_akhir" class="publish-rate-sea-code_akhir detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-code_akhir" /><a style="display:none" class="add-on browse code_akhir detail_jadwal" id="cari-publish-rate-sea-'+i+'-code_akhir" href="cari?ref=publish-rate-sea-'+i+'-code_akhir&tipe=sea" title="Klik untuk mencari code_akhir"><i class="icon-search"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][code_akhir]" id="publish-rate-sea-'+i+'-code_akhir" class="publish-rate-sea-code_akhir detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-code_akhir" /><a style="display:none" class="add-on browse code_akhir detail_jadwal" id="cari-publish-rate-sea-'+i+'-code_akhir" href="cari/ref/publish-rate-sea-'+i+'-code_akhir/tipe/sea" title="Klik untuk mencari code_akhir"><i class="icon-search"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:200px" readonly type="text" name="publish_rate_sea['+i+'][port_akhir]" id="publish-rate-sea-'+i+'-port_akhir" class="publish-rate-sea-port_akhir detail_jadwal" /></td>';
 	
-	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][unit_code]" id="publish-rate-sea-'+i+'-unit_code" class="publish-rate-sea-unit_code detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-unit_code" /><a style="display:none" class="add-on browse unit_code detail_jadwal" id="cari-publish-rate-sea-'+i+'-unit_code" href="cari?ref=publish-rate-sea-'+i+'-unit_code&tipe=unit" title="Klik untuk mencari unit_code"><i class="icon-search"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][unit_code]" id="publish-rate-sea-'+i+'-unit_code" class="publish-rate-sea-unit_code detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-unit_code" /><a style="display:none" class="add-on browse unit_code detail_jadwal" id="cari-publish-rate-sea-'+i+'-unit_code" href="cari/ref/publish-rate-sea-'+i+'-unit_code/tipe/unit" title="Klik untuk mencari unit_code"><i class="icon-search"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:80px" readonly type="text" name="publish_rate_sea['+i+'][unit_description]" id="publish-rate-sea-'+i+'-unit_description" class="publish-rate-sea-unit_description detail_jadwal" /></td>';
 		
-	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][currency_code]" id="publish-rate-sea-'+i+'-currency_code" class="publish-rate-sea-currency_code detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-currency_code" /><a style="display:none" class="add-on browse currency_code detail_jadwal" id="cari-publish-rate-sea-'+i+'-currency_code" href="cari?ref=publish-rate-sea-'+i+'-currency_code&tipe=cur" title="Klik untuk mencari currency_code"><i class="icon-search"></i></a></div></td>';
+	tabel += '<td><div class="input-append"><input style="width:80px" type="text" name="publish_rate_sea['+i+'][currency_code]" id="publish-rate-sea-'+i+'-currency_code" class="publish-rate-sea-currency_code detail_jadwal" oldvalue="" browseobj="cari-publish-rate-sea-'+i+'-currency_code" /><a style="display:none" class="add-on browse currency_code detail_jadwal" id="cari-publish-rate-sea-'+i+'-currency_code" href="cari/ref/publish-rate-sea-'+i+'-currency_code/tipe/cur" title="Klik untuk mencari currency_code"><i class="icon-search"></i></a></div></td>';
 	
 	tabel += '<td><input style="width:80px" readonly type="text" name="publish_rate_sea['+i+'][currency_description]" id="publish-rate-sea-'+i+'-currency_description" class="publish-rate-sea-currency_description detail_jadwal" /></td>';
 	

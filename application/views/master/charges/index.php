@@ -10,7 +10,7 @@
 						<div class="input-append"><input type="text" name="charges_code"
 						id="charges_code" oldvalue="" browseobj="cari_kode_charges" />
 						<a style="display:none" class="add-on browse" id="cari_kode_charges"
-						href="cari?ref=charges_code&tipe=chra" 
+						href="cari/ref/charges_code/tipe/chra" 
 						title="Klik untuk mencari Kode charges">
 						<i class="icon-search"></i></a></div>
 					</div>
