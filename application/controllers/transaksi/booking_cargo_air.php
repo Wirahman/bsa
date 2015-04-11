@@ -60,8 +60,13 @@ class Booking_cargo_air extends CI_Controller {
 	public function db_read_all_weight()
 	{
 		if ($this->tank_auth->is_logged_in()) {
+<<<<<<< HEAD
 			$this->load->model( 'Mcapasity', 'mcapasity' );
 			$weight_type = $this->mcapasity->all();
+=======
+			$this->load->model( 'Munit', 'munit' );
+			$weight_type = $this->munit->all();
+>>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 			if(!empty($weight_type))
 			{
 				echo serialize($weight_type);
@@ -527,7 +532,11 @@ class Booking_cargo_air extends CI_Controller {
 					$hasil=$this->tbooking_cargo_air->create( $data );
 					if ($hasil=='ada'){
 						$resulttrn['status']='Error';
+<<<<<<< HEAD
 						$resulttrn['ket']='Data Already Exist.';
+=======
+						$resulttrn['ket']='Data Already exist.';
+>>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 					}elseif ($hasil=='1'){
 						$hasil=true;
 						$this->tbooking_cargo_air_route->clean( $_POST['order_no']);

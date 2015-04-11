@@ -1605,3 +1605,557 @@ DEBUG - 2015-04-11 04:16:56 --> Final output sent to browser
 DEBUG - 2015-04-11 04:16:56 --> Total execution time: 0.4760
 DEBUG - 2015-04-11 04:16:56 --> Final output sent to browser
 DEBUG - 2015-04-11 04:16:56 --> Total execution time: 0.2050
+DEBUG - 2015-04-11 10:23:29 --> Config Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:23:29 --> URI Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Router Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> No URI present. Default controller set.
+DEBUG - 2015-04-11 10:23:29 --> Output Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Security Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Input Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:23:29 --> Language Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:23:29 --> Database Driver Class Initialized
+ERROR - 2015-04-11 10:23:29 --> Severity: Notice  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: send of 5 bytes failed with errno=10053 An established connection was aborted by the software in your host machine.
+ C:\xampp\htdocs\bsa\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-04-11 10:23:29 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:23:29 --> Session Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:23:29 --> Session routines successfully run
+DEBUG - 2015-04-11 10:23:29 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Helper loaded: cookie_helper
+DEBUG - 2015-04-11 10:23:29 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Config Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:23:29 --> URI Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Router Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Output Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Security Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Input Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:23:29 --> Language Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:23:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:23:29 --> Session Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:23:29 --> Session routines successfully run
+DEBUG - 2015-04-11 10:23:29 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:29 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:30 --> Helper loaded: cookie_helper
+DEBUG - 2015-04-11 10:23:30 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:30 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:23:30 --> Helper loaded: form_helper
+DEBUG - 2015-04-11 10:23:30 --> Form Validation Class Initialized
+DEBUG - 2015-04-11 10:23:30 --> Tank_auth class already loaded. Second attempt ignored.
+DEBUG - 2015-04-11 10:23:30 --> Language file loaded: language/english/tank_auth_lang.php
+DEBUG - 2015-04-11 10:23:30 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:30 --> File loaded: application/views/header.php
+DEBUG - 2015-04-11 10:23:30 --> File loaded: application/views/menu_pop.php
+DEBUG - 2015-04-11 10:23:30 --> File loaded: application/views/auth/login_form.php
+DEBUG - 2015-04-11 10:23:30 --> File loaded: application/views/footer.php
+DEBUG - 2015-04-11 10:23:30 --> Final output sent to browser
+DEBUG - 2015-04-11 10:23:30 --> Total execution time: 0.3099
+DEBUG - 2015-04-11 10:23:33 --> Config Class Initialized
+DEBUG - 2015-04-11 10:23:33 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:23:33 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:23:33 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:23:33 --> URI Class Initialized
+DEBUG - 2015-04-11 10:23:33 --> Router Class Initialized
+DEBUG - 2015-04-11 10:23:33 --> Output Class Initialized
+DEBUG - 2015-04-11 10:23:33 --> Security Class Initialized
+DEBUG - 2015-04-11 10:23:33 --> Input Class Initialized
+DEBUG - 2015-04-11 10:23:33 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:33 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:33 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:33 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:23:33 --> Language Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:23:34 --> Database Driver Class Initialized
+ERROR - 2015-04-11 10:23:34 --> Severity: Notice  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: send of 5 bytes failed with errno=10053 An established connection was aborted by the software in your host machine.
+ C:\xampp\htdocs\bsa\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-04-11 10:23:34 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:23:34 --> Session Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:23:34 --> Session routines successfully run
+DEBUG - 2015-04-11 10:23:34 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Helper loaded: cookie_helper
+DEBUG - 2015-04-11 10:23:34 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Helper loaded: form_helper
+DEBUG - 2015-04-11 10:23:34 --> Form Validation Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Tank_auth class already loaded. Second attempt ignored.
+DEBUG - 2015-04-11 10:23:34 --> Language file loaded: language/english/tank_auth_lang.php
+DEBUG - 2015-04-11 10:23:34 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:34 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2015-04-11 10:23:34 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:34 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:34 --> Config Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:23:34 --> URI Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Router Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> No URI present. Default controller set.
+DEBUG - 2015-04-11 10:23:34 --> Output Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Security Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Input Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:23:34 --> Language Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:23:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:23:34 --> Session Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:23:34 --> Session routines successfully run
+DEBUG - 2015-04-11 10:23:34 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:23:34 --> File loaded: application/views/header.php
+DEBUG - 2015-04-11 10:23:34 --> File loaded: application/views/menu.php
+DEBUG - 2015-04-11 10:23:34 --> File loaded: application/views/welcome_message.php
+DEBUG - 2015-04-11 10:23:34 --> File loaded: application/views/footer.php
+DEBUG - 2015-04-11 10:23:34 --> Final output sent to browser
+DEBUG - 2015-04-11 10:23:34 --> Total execution time: 0.2732
+DEBUG - 2015-04-11 10:23:41 --> Config Class Initialized
+DEBUG - 2015-04-11 10:23:41 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:23:41 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:23:41 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:23:41 --> URI Class Initialized
+DEBUG - 2015-04-11 10:23:41 --> Router Class Initialized
+DEBUG - 2015-04-11 10:23:41 --> Output Class Initialized
+DEBUG - 2015-04-11 10:23:41 --> Security Class Initialized
+DEBUG - 2015-04-11 10:23:41 --> Input Class Initialized
+DEBUG - 2015-04-11 10:23:41 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:23:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:23:42 --> Language Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:23:42 --> Database Driver Class Initialized
+ERROR - 2015-04-11 10:23:42 --> Severity: Notice  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: send of 5 bytes failed with errno=10053 An established connection was aborted by the software in your host machine.
+ C:\xampp\htdocs\bsa\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-04-11 10:23:42 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:23:42 --> Session Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:23:42 --> Session garbage collection performed.
+DEBUG - 2015-04-11 10:23:42 --> Session routines successfully run
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 10:23:42 --> Model Class Initialized
+DEBUG - 2015-04-11 15:23:42 --> File loaded: application/views/header.php
+DEBUG - 2015-04-11 15:23:42 --> File loaded: application/views/menu.php
+DEBUG - 2015-04-11 15:23:42 --> File loaded: application/views/unauthorized.php
+DEBUG - 2015-04-11 15:23:42 --> File loaded: application/views/footer.php
+DEBUG - 2015-04-11 15:23:42 --> Final output sent to browser
+DEBUG - 2015-04-11 15:23:42 --> Total execution time: 0.4600
+DEBUG - 2015-04-11 10:30:51 --> Config Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:30:51 --> URI Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Router Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Output Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Security Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Input Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:30:51 --> Language Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:30:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:30:51 --> Session Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:30:51 --> Session routines successfully run
+DEBUG - 2015-04-11 10:30:51 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: cookie_helper
+DEBUG - 2015-04-11 10:30:51 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: form_helper
+DEBUG - 2015-04-11 10:30:51 --> Form Validation Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Tank_auth class already loaded. Second attempt ignored.
+DEBUG - 2015-04-11 10:30:51 --> Language file loaded: language/english/tank_auth_lang.php
+DEBUG - 2015-04-11 10:30:51 --> Config Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:30:51 --> URI Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Router Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Output Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Security Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Input Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:30:51 --> Language Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:30:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:30:51 --> Session Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:30:51 --> Session routines successfully run
+DEBUG - 2015-04-11 10:30:51 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: cookie_helper
+DEBUG - 2015-04-11 10:30:51 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: form_helper
+DEBUG - 2015-04-11 10:30:51 --> Form Validation Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Tank_auth class already loaded. Second attempt ignored.
+DEBUG - 2015-04-11 10:30:51 --> Language file loaded: language/english/tank_auth_lang.php
+DEBUG - 2015-04-11 10:30:51 --> Config Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:30:51 --> URI Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Router Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Output Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Security Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Input Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:30:51 --> Language Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:30:51 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:30:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:30:52 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:30:52 --> Session Class Initialized
+DEBUG - 2015-04-11 10:30:52 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:30:52 --> Session routines successfully run
+DEBUG - 2015-04-11 10:30:52 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:52 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:52 --> Helper loaded: cookie_helper
+DEBUG - 2015-04-11 10:30:52 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:52 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:30:52 --> Helper loaded: form_helper
+DEBUG - 2015-04-11 10:30:52 --> Form Validation Class Initialized
+DEBUG - 2015-04-11 10:30:52 --> Tank_auth class already loaded. Second attempt ignored.
+DEBUG - 2015-04-11 10:30:52 --> Language file loaded: language/english/tank_auth_lang.php
+DEBUG - 2015-04-11 10:30:52 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:52 --> File loaded: application/views/header.php
+DEBUG - 2015-04-11 10:30:52 --> File loaded: application/views/menu_pop.php
+DEBUG - 2015-04-11 10:30:52 --> File loaded: application/views/auth/login_form.php
+DEBUG - 2015-04-11 10:30:52 --> File loaded: application/views/footer.php
+DEBUG - 2015-04-11 10:30:52 --> Final output sent to browser
+DEBUG - 2015-04-11 10:30:52 --> Total execution time: 0.3042
+DEBUG - 2015-04-11 10:30:55 --> Config Class Initialized
+DEBUG - 2015-04-11 10:30:55 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:30:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:30:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:30:55 --> URI Class Initialized
+DEBUG - 2015-04-11 10:30:55 --> Router Class Initialized
+DEBUG - 2015-04-11 10:30:55 --> Output Class Initialized
+DEBUG - 2015-04-11 10:30:55 --> Security Class Initialized
+DEBUG - 2015-04-11 10:30:55 --> Input Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:56 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:56 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:56 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:30:56 --> Language Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:30:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:30:56 --> Session Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:30:56 --> Session routines successfully run
+DEBUG - 2015-04-11 10:30:56 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Helper loaded: cookie_helper
+DEBUG - 2015-04-11 10:30:56 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Helper loaded: form_helper
+DEBUG - 2015-04-11 10:30:56 --> Form Validation Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Tank_auth class already loaded. Second attempt ignored.
+DEBUG - 2015-04-11 10:30:56 --> Language file loaded: language/english/tank_auth_lang.php
+DEBUG - 2015-04-11 10:30:56 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:56 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2015-04-11 10:30:56 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:56 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:56 --> Config Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:30:56 --> URI Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Router Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> No URI present. Default controller set.
+DEBUG - 2015-04-11 10:30:56 --> Output Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Security Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Input Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:30:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:30:56 --> Language Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:30:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:30:56 --> Session Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:30:56 --> Session routines successfully run
+DEBUG - 2015-04-11 10:30:56 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Model Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:30:56 --> File loaded: application/views/header.php
+DEBUG - 2015-04-11 10:30:56 --> File loaded: application/views/menu.php
+DEBUG - 2015-04-11 10:30:56 --> File loaded: application/views/welcome_message.php
+DEBUG - 2015-04-11 10:30:56 --> File loaded: application/views/footer.php
+DEBUG - 2015-04-11 10:30:56 --> Final output sent to browser
+DEBUG - 2015-04-11 10:30:56 --> Total execution time: 0.2616
+DEBUG - 2015-04-11 10:31:01 --> Config Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:31:01 --> URI Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Router Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Output Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Security Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Input Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:31:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:31:01 --> Language Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:31:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:31:01 --> Session Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:31:01 --> Session routines successfully run
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:01 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:01 --> File loaded: application/views/header.php
+DEBUG - 2015-04-11 15:31:01 --> File loaded: application/views/menu.php
+DEBUG - 2015-04-11 15:31:01 --> File loaded: application/views/transaksi/sea_invoice_ap/index.php
+DEBUG - 2015-04-11 15:31:01 --> File loaded: application/views/footer.php
+DEBUG - 2015-04-11 15:31:01 --> Final output sent to browser
+DEBUG - 2015-04-11 15:31:01 --> Total execution time: 0.4225
+DEBUG - 2015-04-11 10:31:02 --> Config Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:31:02 --> URI Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Router Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Output Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Config Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Security Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Input Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:31:02 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:31:02 --> URI Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Config Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:31:02 --> Router Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Language Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Output Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Security Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:31:02 --> URI Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Input Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:31:02 --> Router Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:31:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:31:02 --> Output Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Language Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:31:02 --> Security Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Input Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Session Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:31:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:31:02 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:31:02 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:31:02 --> Session routines successfully run
+DEBUG - 2015-04-11 10:31:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Language Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Session Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:31:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Session routines successfully run
+DEBUG - 2015-04-11 10:31:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Session Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Session routines successfully run
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:02 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:03 --> Final output sent to browser
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:03 --> Total execution time: 0.6979
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:03 --> Final output sent to browser
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:03 --> Total execution time: 0.7253
+DEBUG - 2015-04-11 10:31:03 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:03 --> Final output sent to browser
+DEBUG - 2015-04-11 15:31:03 --> Total execution time: 0.6929
+DEBUG - 2015-04-11 10:31:06 --> Config Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Hooks Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-11 10:31:06 --> URI Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Router Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Output Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Security Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Input Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:31:06 --> XSS Filtering completed
+DEBUG - 2015-04-11 10:31:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-11 10:31:06 --> Language Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Loader Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-11 10:31:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2015-04-11 10:31:06 --> Session Class Initialized
+DEBUG - 2015-04-11 10:31:06 --> Helper loaded: string_helper
+DEBUG - 2015-04-11 10:31:06 --> Session routines successfully run
+DEBUG - 2015-04-11 10:31:06 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Controller Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 10:31:07 --> Model Class Initialized
+DEBUG - 2015-04-11 15:31:07 --> Final output sent to browser
+DEBUG - 2015-04-11 15:31:07 --> Total execution time: 0.4167

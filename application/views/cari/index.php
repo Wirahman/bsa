@@ -75,6 +75,7 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="port_kode;port_name;country_code;region_code";
 	xfunction_name="db_airport";
+<<<<<<< HEAD
 }else if ($('#tipe').val()=='air_gross_profit_export'){
 	xlebar="100px;150px";
 	xjudul="GP No; Date";
@@ -87,6 +88,8 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="gp_no;order_date";
 	xfunction_name="db_air_gross_profit_import";
+=======
+>>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 }else if ($('#tipe').val()=='airline'){
 	xlebar="100px;150px;200px";
 	xjudul="Airline ID; Airline Name; Flight No.";
@@ -105,6 +108,7 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="MAWB_no;order_date";
 	xfunction_name="db_air_import_master";
+<<<<<<< HEAD
 }else if ($('#tipe').val()=='air_invoice_ar'){
 	xlebar="100px;150px";
 	xjudul="Invoice No;Invoice Date";
@@ -117,6 +121,8 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="invoice_no;invoice_date";
 	xfunction_name="db_air_invoice_ap";
+=======
+>>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 }else if  ($('#tipe').val()=='air_quot'){
 	xlebar="100px;350px;400px;450px";
 	xjudul="Quotation;Date;Attn;Re;Regards;Valid From;Valid Until;Customer ID; Customer Name; Sales Code; Sales Name; Term and Condition; Sales Notes; Manager Notes; Director Notes";
@@ -410,6 +416,7 @@ if ($('#tipe').val()=='air'){
 	xjudul="Code;Name;Type;Flag";
 	xalign="";
 	xfield="vessel_code;vessel_name;vessel_type;flag";
+<<<<<<< HEAD
 	xfunction_name="db_vessel";	
 }else if($('#tipe').val()=='feeder_vessel'){
 	xlebar="100px;350px;400px;450px";
@@ -429,6 +436,9 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="vessel_code;vessel_name;vessel_type;flag";
 	xfunction_name="db_others_vessel";		
+=======
+	xfunction_name="db_vessel";		
+>>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 }else if($('#tipe').val()=='carrier_booking_air'){
 	xlebar="100px;150px;200px";
 	xjudul="SI No;Order Date;Reference";

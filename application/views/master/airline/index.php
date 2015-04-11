@@ -7,7 +7,11 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="airline_id">Airline ID :</label>
 					<div class="controls">
+<<<<<<< HEAD
 						<div class="input-append"><input type="text" name="airline_id" id="airline_id" oldvalue="" browseobj="cari_kode_airline" /><a style="display:none" class="add-on browse" id="cari_kode_airline" href="cari?ref=airline_id&tipe=airline" title="Klik untuk mencari Kode Vessel"><i class="icon-search"></i></a></div>
+=======
+						<div class="input-append"><input type="text" name="airline_id" id="airline_id" oldvalue="" browseobj="cari_kode_airline" /><a style="display:none" class="add-on browse" id="cari_kode_airline" href="cari?ref=airline_id&tipe=ves" title="Klik untuk mencari Kode Vessel"><i class="icon-search"></i></a></div>
+>>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 					</div>
 				</div>
 			</div>
