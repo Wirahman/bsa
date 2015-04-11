@@ -10,7 +10,7 @@
 						<div class="input-append"><input type="text" name="comclass"
 						id="comclass" oldvalue="" browseobj="cari_kode_comclass" />
 						<a style="display:none" class="add-on browse" id="cari_kode_comclass"
-						href="cari?ref=comclass&tipe=commclass" 
+						href="cari/ref/comclass/tipe/commclass" 
 						title="Klik untuk mencari Commodity Class">
 						<i class="icon-search"></i></a></div>
 					</div>

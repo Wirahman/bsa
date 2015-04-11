@@ -1,32 +1,32 @@
 <?php
-	if( isset( $_GET['ref'] ) ){
-		echo '<input type="hidden" id="ref" value="'.$_GET['ref'].'" />';
+	if( isset( $args['ref'] ) ){
+		echo '<input type="hidden" id="ref" value="'.$args['ref'].'" />';
 	} else echo '<input type="hidden" id="ref" value="" />';
-	if( isset( $_GET['ref2'] ) ){
-		echo '<input type="hidden" id="ref2" value="'.$_GET['ref2'].'" />';
+	if( isset( $args['ref2'] ) ){
+		echo '<input type="hidden" id="ref2" value="'.$args['ref2'].'" />';
 	} else echo '<input type="hidden" id="ref2" value="" />';
-	if( isset( $_GET['ref2from'] ) ){
-		echo '<input type="hidden" id="ref2from" value="'.$_GET['ref2from'].'" />';
+	if( isset( $args['ref2from'] ) ){
+		echo '<input type="hidden" id="ref2from" value="'.$args['ref2from'].'" />';
 	} else echo '<input type="hidden" id="ref2from" value="" />';
 
-	if( isset( $_GET['tipe'] ) ){
-		echo '<input type="hidden" id="tipe" value="'.$_GET['tipe'].'" />';
+	if( isset( $args['tipe'] ) ){
+		echo '<input type="hidden" id="tipe" value="'.$args['tipe'].'" />';
 	} else echo '<input type="hidden" id="tipe" />';
 
-	if( isset( $_GET['cond1'] ) ){
-		echo '<input type="hidden" id="cond1" value="'.$_GET['cond1'].'" />';
+	if( isset( $args['cond1'] ) ){
+		echo '<input type="hidden" id="cond1" value="'.$args['cond1'].'" />';
 	} else echo '<input type="hidden" id="cond1" value="" />';
 
-	if( isset( $_GET['cond2'] ) ){
-		echo '<input type="hidden" id="cond2" value="'.$_GET['cond2'].'" />';
+	if( isset( $args['cond2'] ) ){
+		echo '<input type="hidden" id="cond2" value="'.$args['cond2'].'" />';
 	} else echo '<input type="hidden" id="cond2" value="" />';
 
-	if( isset( $_GET['cond3'] ) ){
-		echo '<input type="hidden" id="cond3" value="'.$_GET['cond3'].'" />';
+	if( isset( $args['cond3'] ) ){
+		echo '<input type="hidden" id="cond3" value="'.$args['cond3'].'" />';
 	} else echo '<input type="hidden" id="cond3" value="" />';
 
-	if( isset( $_GET['cond4'] ) ){
-		echo '<input type="hidden" id="cond4" value="'.$_GET['cond4'].'" />';
+	if( isset( $args['cond4'] ) ){
+		echo '<input type="hidden" id="cond4" value="'.$args['cond4'].'" />';
 	} else echo '<input type="hidden" id="cond4" value="" />';
 
 ?>
@@ -470,7 +470,7 @@ if ($('#tipe').val()=='air'){
 	xfield="customer_id;company_name;"
 	xfunction_name="db_customer";
 }else{
-	alert('Script Error. Refresh Page');
+	alert('Script Error. Search type \''+$('#tipe').val()+'\' not defined. Refresh Page');
 	parent.$.fancybox.close();
 }
 
@@ -481,7 +481,7 @@ var pecahjudul=xjudul.split(';');
 var pecahalign=xalign.split(';');
 var pecahfield=xfield.split(';');
 maxfield=Number(pecahfield.length)-1;
-	$.post( '../'+ xfunction_name, { key: kode,cond1: $('#cond1').val(),cond2: $('#cond2').val(),cond3: $('#cond3').val(),cond4: $('#cond4').val() }, function( result ){
+	$.post( '<?php echo site_url($controller); ?>'+ xfunction_name, { key: kode,cond1: $('#cond1').val(),cond2: $('#cond2').val(),cond3: $('#cond3').val(),cond4: $('#cond4').val() }, function( result ){
 		var data = unserialize( result );
 		// hasil=data;
 		var tabel = '<table><thead><tr>'

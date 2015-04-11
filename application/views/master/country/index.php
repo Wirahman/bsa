@@ -10,7 +10,7 @@
 						<div class="input-append"><input type="text" name="country_code"
 						id="country_code" oldvalue="" browseobj="cari_kode_country" style="width:50px"/>
 						<a style="display:none" class="add-on browse" id="cari_kode_country"
-						href="cari?ref=country_code&tipe=count" 
+						href="cari/ref/country_code/tipe/count" 
 						title="Klik untuk mencari Kode Country">
 						<i class="icon-search"></i></a></div>
 					</div>

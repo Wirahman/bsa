@@ -1,6 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Sea_export_master extends CI_Controller {
+    private $controller = 'transaksi/sea_export_master';
 
 function __construct()
 {
@@ -42,19 +43,11 @@ public function index()
 	}
 }
 
-public function cari()
-{
-	$this->load->view('header');
-	$this->load->view('menu_pop');
-	if (!$this->tank_auth->is_logged_in()){
-		$this->load->view('unauthorized');
-	} else {
-		$data['user_id']	= $this->tank_auth->get_user_id();
-		$data['username']	= $this->tank_auth->get_username();
-		$this->load->view('cari/index');
+	public function cari()
+	{
+	    $args = $this->uri->uri_to_assoc(4);
+		cari($this, $this->controller, $args);
 	}
-	$this->load->view('footer');
-}
 
 	public function db_read_all_weight()
 	{

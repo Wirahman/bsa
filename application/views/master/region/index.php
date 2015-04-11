@@ -10,7 +10,7 @@
 						<div class="input-append"><input type="text" name="region_code"
 						id="region_code" oldvalue="" browseobj="cari_kode_region" style="width:50px"/>
 						<a style="display:none" class="add-on browse" id="cari_kode_region"
-						href="cari?ref=region_code&tipe=reg" 
+						href="cari/ref/region_code/tipe/reg" 
 						title="Klik untuk mencari Kode Region">
 						<i class="icon-search"></i></a></div>
 					</div>

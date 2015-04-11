@@ -1,6 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Jurnal_umum extends CI_Controller {
+    private $controller = 'transaksi/jurnal_umum';
 
 	function __construct()
 	{
@@ -36,16 +37,8 @@ class Jurnal_umum extends CI_Controller {
 
 	public function cari()
 	{
-		$this->load->view('header');
-		$this->load->view('menu_pop');
-		if (!$this->tank_auth->is_logged_in()) {
-			$this->load->view('unauthorized');
-		} else {
-			$data['user_id']	= $this->tank_auth->get_user_id();
-			$data['username']	= $this->tank_auth->get_username();
-			$this->load->view('cari/index');
-		}
-		$this->load->view('footer');
+	    $args = $this->uri->uri_to_assoc(4);
+		cari($this, $this->controller, $args);
 	}
 
 	public function db_jurnal()

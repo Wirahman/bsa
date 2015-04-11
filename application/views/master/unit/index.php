@@ -10,7 +10,7 @@
 						<div class="input-append"><input type="text" name="unit_code"
 						id="unit_code" oldvalue="" browseobj="cari_kode_unit" style="width:50px" />
 						<a style="display:none" class="add-on browse" id="cari_kode_unit"
-						href="cari?ref=unit_code&tipe=unit" 
+						href="cari/ref/unit_code/tipe/unit" 
 						title="Klik untuk mencari Kode Unit">
 						<i class="icon-search"></i></a></div>
 					</div>

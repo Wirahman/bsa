@@ -10,7 +10,7 @@
 					<div class="input-append"><input type="text" name="date" 
 					id="date"  oldvalue="" browseobj="cari_kode_date" class="date tanggal"/>
 					<a style="display:none" class="add-on browse" id="cari_kode_date"
-					href="cari?ref=date&tipe=sal_bon" 
+					href="cari/ref/date/tipe/sal_bon" 
 					title="Klik untuk mencari Kode Date">
 						<i class="icon-search"></i></a></div>
 					</div>

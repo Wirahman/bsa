@@ -7,7 +7,7 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="code">Commodity Code :</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="code" id="code" oldvalue="" browseobj="cari_kode_commodity" style="width:50px" /><a style="display:none" class="add-on browse" id="cari_kode_commodity" href="cari?ref=code&tipe=com" title="Klik untuk mencari Kode Commodity"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="code" id="code" oldvalue="" browseobj="cari_kode_commodity" style="width:50px" /><a style="display:none" class="add-on browse" id="cari_kode_commodity" href="cari/ref/code/tipe/com" title="Klik untuk mencari Kode Commodity"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 			</div>
@@ -27,7 +27,7 @@
 						<div class="input-append">
 							<input type="text" name="commodity_class" id="commodity_class" oldvalue="" browseobj="cari_commodity_class" style="width:50px" />
 							<input type="text" style="width:440px" readonly="readonly" name="nama_kepala" id="nama_kepala" />
-							<a style="display:none" class="add-on browse" id="cari_commodity_class" href="cari?ref=commodity_class&tipe=commclass" title="Klik untuk mencari Commodity Class"><i class="icon-search"></i></a>				
+							<a style="display:none" class="add-on browse" id="cari_commodity_class" href="cari/ref/commodity/class/tipe/commclass" title="Klik untuk mencari Commodity Class"><i class="icon-search"></i></a>				
 						</div>
 					</div>
 				</div>

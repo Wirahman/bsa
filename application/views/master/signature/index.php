@@ -10,7 +10,7 @@
 						<div class="input-append"><input type="text" name="signature_code"
 						id="signature_code" oldvalue="" browseobj="cari_kode_signature" style="width:50px" />
 						<a style="display:none" class="add-on browse" id="cari_kode_signature"
-						href="cari?ref=signature_code&tipe=sig" 
+						href="cari/ref/signature_code/tipe/sig" 
 						title="Klik untuk mencari Kode Signature">
 						<i class="icon-search"></i></a></div>
 					</div>
