@@ -8,6 +8,31 @@ class Search extends CI_Model {
 		parent::__construct();
 		$this->setlimit=850;
 	}
+	
+	function search_air_gross_profit_export( $key = '' )
+	{
+		$sql="select * from gl_air_gross_profit_export ";
+		if( $key!='' ){
+			$sql.="where gl_air_gross_profit_export.gp_no like '". $key ."%' or gl_air_gross_profit_export.gp_no like '". $key ."%.";
+		}
+		$sql.="order by gp_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_air_gross_profit_import( $key = '' )
+	{
+		$sql="select * from gl_air_gross_profit_import ";
+		if( $key!='' ){
+			$sql.="where gl_air_gross_profit_import.gp_no like '". $key ."%' or gl_air_gross_profit_import.gp_no like '". $key ."%.";
+		}
+		$sql.="order by gp_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	function search_aircount( $key = '' )
 	{	
 		$sql="select t.*,k.country_name as country_name from gl_airport as t left join gl_country as k on t.country_code=k.country_code ";
@@ -56,6 +81,32 @@ class Search extends CI_Model {
 		return $query->result_array();
 	}
 	
+	function search_air_invoice_ar( $key = '')
+	{
+		$sql="select * from gl_air_invoice_ar ";
+		if( $key!=''){
+			$sql.="where (gl_air_invoice_ar.invoice_no like '". $key ."%' or gl_air_invoice_ar.invoice_date like '". $key ."%')";
+		}
+
+		$sql.="order by invoice_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_air_invoice_ap( $key = '')
+	{
+		$sql="select * from gl_air_invoice_ap ";
+		if( $key!=''){
+			$sql.="where (gl_air_invoice_ap.invoice_no like '". $key ."%' or gl_air_invoice_ap.invoice_date like '". $key ."%')";
+		}
+
+		$sql.="order by invoice_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	function search_air_quot( $key = '' )
 	{
 		$sql="select * from gl_air_quot ";
@@ -68,6 +119,32 @@ class Search extends CI_Model {
 		return $query->result_array();
 	}
 	
+	function search_air_export_master( $key = '' )
+	{
+		$sql="select * from gl_air_export_master ";
+		if( $key!='' ){
+			$sql.="where (gl_air_export_master.MAWB_no like '". $key ."%' or  gl_air_export_master.MAWB_no like '". $key ."%') ";
+		}
+
+		$sql.="order by MAWB_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_air_import_master( $key = '' )
+	{
+		$sql="select * from gl_air_import_master ";
+		if( $key!='' ){
+			$sql.="where (gl_air_import_master.MAWB_no like '". $key ."%' or  gl_air_import_master.MAWB_no like '". $key ."%') ";
+		}
+
+		$sql.="order by MAWB_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	function search_booking_cargo_air( $key = '' )
 	{
 		$sql="select * from gl_booking_cargo_air ";
@@ -178,6 +255,18 @@ class Search extends CI_Model {
 		return $query->result_array();
 	}
 	
+	function search_capasity( $key = '' )
+	{
+		$sql="select * from gl_capasity ";
+		if( $key!='' ){
+			$sql.="where gl_capasity.capasity_code like '". $key ."%' or  gl_capasity.description like '". $key ."%'";
+		}
+		$sql.="order by capasity_code";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+	
 	function search_city( $key = '' )
 	{
 		$sql="select * from gl_city ";
@@ -258,6 +347,19 @@ class Search extends CI_Model {
 			$sql.="where gl_currency.currency_code like '". $key ."%' or  gl_currency.description like '". $key ."%'";
 		}
 		$sql.="order by currency_code";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_carrier_booking_air( $key= '' )
+	{
+		$sql="select * from gl_carrier_booking_air ";
+		if( $key!='' ){
+			$sql.="where (gl_carrier_booking_air.si_no like '". $key ."%' or gl_carrier_booking_air.si_no like '". $key ."%') ";
+		}
+
+		$sql.="order by si_no";
 		$sql.=" limit ".$this->setlimit;
 		$query = $this->db->query($sql,array());
 		return $query->result_array();
@@ -422,7 +524,30 @@ class Search extends CI_Model {
 		return $query->result_array();
 	}
 	
-	
+	function search_sea_gross_profit_export( $key = '' )
+	{
+		$sql="select * from gl_sea_gross_profit_export ";
+		if( $key!='' ){
+			$sql.="where gl_sea_gross_profit_export.gp_no like '". $key ."%' or gl_sea_gross_profit_export.gp_no like '". $key ."%.";
+		}
+		$sql.="order by gp_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_sea_gross_profit_import( $key = '' )
+	{
+		$sql="select * from gl_sea_gross_profit_import ";
+		if( $key!='' ){
+			$sql.="where gl_sea_gross_profit_import.gp_no like '". $key ."%' or gl_sea_gross_profit_import.gp_no like '". $key ."%.";
+		}
+		$sql.="order by gp_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	function search_seaport( $key = '' )
 	{
 		$sql="select * from gl_seaport ";
@@ -434,6 +559,20 @@ class Search extends CI_Model {
 		$query = $this->db->query($sql,array());
 		return $query->result_array();
 	}
+	
+	function search_shipment_inbound_entry_air( $key = '' )
+	{
+		$sql="select * from gl_shipment_inbound_entry_air ";
+		if( $key!='' ){
+			$sql.="where (gl_shipment_inbound_entry_air.order_no like '". $key ."%' or  gl_shipment_inbound_entry_air.order_no like '". $key ."%') ";
+		}
+
+		$sql.="order by order_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	
 	function search_shipment_inbound_entry_sea( $key = '' )
 	{
@@ -525,7 +664,7 @@ class Search extends CI_Model {
 	{
 		$sql="SELECT p . * , c.id_seaport, c.nama AS port_kode, port_name
 				FROM gl_airport AS p
-				LEFT JOIN gl_publish_sea AS c ON p.port_kode = c.id_seaport
+				LEFT JOIN gl_publish_air AS c ON p.port_kode = c.id_seaport
 				AND p.port_name = c.nama";
 		if( $key!='' ){
 			$sql.="where p.port_kode like '". $key ."%' or  p.port_name like '". $key ."%'";
@@ -571,6 +710,32 @@ class Search extends CI_Model {
 		}
 
 		$sql.="order by OBL_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_sea_invoice_ar( $key = '')
+	{
+		$sql="select * from gl_sea_invoice_ar ";
+		if( $key!=''){
+			$sql.="where (gl_sea_invoice_ar.invoice_no like '". $key ."%' or gl_sea_invoice_ar.invoice_date like '". $key ."%')";
+		}
+
+		$sql.="order by invoice_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
+	function search_sea_invoice_ap( $key = '')
+	{
+		$sql="select * from gl_sea_invoice_ap ";
+		if( $key!=''){
+			$sql.="where (gl_sea_invoice_ap.invoice_no like '". $key ."%' or gl_sea_invoice_ap.invoice_date like '". $key ."%')";
+		}
+
+		$sql.="order by invoice_no";
 		$sql.=" limit ".$this->setlimit;
 		$query = $this->db->query($sql,array());
 		return $query->result_array();
@@ -761,6 +926,42 @@ class Search extends CI_Model {
 	function search_ves( $key = '' )
 	{
 		$sql="select * from gl_vessel ";
+		if( $key!='' ){
+			$sql.="where gl_vessel.vessel_code like '". $key ."%' or  gl_vessel.vessel_name like '". $key ."%'";
+		}
+		$sql.="order by vessel_code";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+	
+	function search_feeder_vessel( $key = '' )
+	{
+		$sql="select * from gl_vessel where vessel_type = 'Feeder Vessel' ";
+		if( $key!='' ){
+			$sql.="where gl_vessel.vessel_code like '". $key ."%' or  gl_vessel.vessel_name like '". $key ."%'";
+		}
+		$sql.="order by vessel_code";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+	
+	function search_mother_vessel( $key = '' )
+	{
+		$sql="select * from gl_vessel where vessel_type = 'Mother Vessel' ";
+		if( $key!='' ){
+			$sql.="where gl_vessel.vessel_code like '". $key ."%' or  gl_vessel.vessel_name like '". $key ."%'";
+		}
+		$sql.="order by vessel_code";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+	
+	function search_others_vessel( $key = '' )
+	{
+		$sql="select * from gl_vessel where vessel_type = 'Others' ";
 		if( $key!='' ){
 			$sql.="where gl_vessel.vessel_code like '". $key ."%' or  gl_vessel.vessel_name like '". $key ."%'";
 		}

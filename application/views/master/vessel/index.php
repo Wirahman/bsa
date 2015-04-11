@@ -25,7 +25,8 @@
 				<div class="control-group span12" style="height:50px">
 					<label class="control-label" for="vessel_type">Vessel Type</label>
 					<div class="controls">
-						<input type="radio" value ="Feeder Vessel" name="vessel_type" id="vessel_type1" checked />Feeder Vessel<br>
+						<!-- <input type="radio" value ="Feeder Vessel" name="vessel_type" id="vessel_type1" checked />Feeder Vessel<br> -->
+						<input type="radio" value ="Feeder Vessel" name="vessel_type" id="vessel_type1" />Feeder Vessel<br>
 						<input type="radio" value ="Mother Vessel" name="vessel_type" id="vessel_type2" />Mother Vessel<p>
 						<input type="radio" value ="Others" name="vessel_type" id="vessel_type3" />Others<p>
 					</div>

@@ -425,6 +425,7 @@ function initializex(){
 	$("#packages_type").val($("#packages_type option:first").val());
 	$("#measurement_type").val($("#measurement_type option:first").val());
 	$("#service_type2").val($("#service_type2 option:first").val());
+	nomorbaru();
 }
 preventempty="OBL_no,date";
 preventemptystatus="1,1";
@@ -444,18 +445,34 @@ function set_weight_type(){
 						{
 							if(i==0)
 							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 							}
 							else
 							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'"  >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'"  >'+data[i]['description']+'</option>');
+								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 							}
 						}
 					}
 	});
 }
+function nomorbaru()
+{
+	$.post( 'db_lastid', {tanggal : $( '#date' ).val() }, function( result ){
+		if( result === '' ){
+			var pecah=$( '#date' ).val().split('-');
+			$( '#OBL_no' ).val( pecah[2] + pecah[1] + '0001' );
+		} else {
+			var lastid = ( Number( result ) + 1 ) + '';
+			for( var i = lastid.length; i < 10; i++ ){
+				lastid = '0' + lastid;
+			}
+			$( '#OBL_no' ).val( lastid );
+		}
+	});
+}
+
 //*****************************************************************//
 //
 // Tambah baris tabel vessel
@@ -1710,7 +1727,7 @@ $( ' #OBL_no' ).bind( 'keydown', function (e){
 	if ( e.which === 13 ){
 		e.preventDefault();
 		if($( this ).val() === ''){
-			$('#OBL_no').focus();
+			nomorbaru();
 		} else {
 			$('#date').focus();
 		}

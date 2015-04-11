@@ -117,8 +117,8 @@
 						<tbody id="transaksix">
 						</tbody>
 					</table>
+						</div>
 					</div>
-				</div>
 				</div>
 				
 				<div class="span12 tab-pane notes" style="height:300px;width:1300px" id="notes">	
@@ -1239,7 +1239,6 @@ $( document ).ready( function() {
 		}
 	});
 	
-	
 	$( '#type' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13 ){
 			e.preventDefault();
@@ -1247,6 +1246,16 @@ $( document ).ready( function() {
 				$('#cus_id').focus();
 			}
 		}
+	});
+	
+	$( '#cus_id' ).bind( 'keydown', function( e ) {
+		if ( e.which === 13 ){
+			e.preventDefault();
+			if( $( this ).val() !== '' ){	
+				$('#attn').focus();
+			}
+		}
+	});	
 	
 	
 	$( '#cus_id' ).bind( 'keydown', function( e ) {
@@ -1255,7 +1264,6 @@ $( document ).ready( function() {
 			if ($( '#cus_id' ).val()===''){
 				$(this).attr('oldvalue',$(this).val());
 				$( '#cari_kode_customer' ).click();
-				$( '#attn' ).focus();
 			}else{		
 				$( '#cus_id' ).focus();				
 			}
@@ -1280,7 +1288,7 @@ $( document ).ready( function() {
 		}
 	});
 	
-	});$( '#attn' ).bind( 'keydown', function( e ) {
+	$( '#attn' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13 ){
 			e.preventDefault();
 			if( $( this ).val() !== '' ){	
@@ -1304,6 +1312,7 @@ $( document ).ready( function() {
 			}
 		}
 	});
+
 	$( '#sales_code' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13 ){
 			e.preventDefault();
@@ -1312,6 +1321,7 @@ $( document ).ready( function() {
 			}
 		}
 	});
+
 	$( '#sales_code' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13 ){
 		e.preventDefault();

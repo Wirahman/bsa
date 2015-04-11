@@ -22,7 +22,6 @@ class Tbooking_cargo_air_route extends CI_Model {
 		return $this->db->insert_batch('booking_cargo_air_route', $data);
 	}
 
-
 	/**
 	 * Load Booking Cargo Air Transaksi Data
 	 *

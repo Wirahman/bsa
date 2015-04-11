@@ -7,7 +7,7 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="order_no">Order No.</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="order_no" id="order_no" oldvalue="" browseobj="cari_order_no" /><a style="display:none" class="add-on browse" id="cari_order_no" href="cari?ref=order_no&tipe=booking_cargo_air" title="Klik untuk mencari order number"><i class="icon-search"></i></a></div>
+						<div class="input-append"><input type="text" name="order_no" id="order_no" oldvalue="" browseobj="cari_order_no" /><a style="display:none" class="add-on browse" id="cari_order_no" href="cari?ref=order_no&tipe=booking_cargo_air" title="Click For Search Order No."><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 				<div class="control-group span6" style="height:15px">
@@ -18,17 +18,20 @@
 				</div>
 				
 			</div>
+
 			<div class="row">
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="HAWB_no">HAWB No.</label>
 					<div class="controls">
-						<input type="text" obl="" name="HAWB_no" id="HAWB_no" />
+						<input type="text" HAWB="" name="HAWB_no" id="HAWB_no" oldvalue="" browseobj="cari_HAWB_no" />
+						<a style="display:none" class="add-on browse" id="cari_HAWB_no" href="cari?ref=HAWB_no&tipe=air_import_master" title="Click For Search HAWB No"><i class="icon-search"></i></a>
 					</div>
 				</div>
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="MAWB_no">MAWB No.</label>
 					<div class="controls">
-						<input type="text" obl="" maxlength="20"  name="MAWB_no" id="MAWB_no" />
+						<input type="text" MAWB="" maxlength="20"  name="MAWB_no" id="MAWB_no" oldvalue="" browseobj="cari_MAWB_no" />
+						<a style="display:none" class="add-on browse" id="cari_MAWB_no" href="cari?ref=MAWB_no&tipe=air_export_master" title="Click For Search MAWB No"><i class="icon-search"></i></a>
 					</div>
 				</div>
 			</div>
@@ -36,13 +39,17 @@
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="SI_ref">SI Ref</label>
 					<div class="controls">
-						<input type="text" siref="" maxlength="10" name="SI_ref" id="SI_ref" />
+						<input type="text" siref="" maxlength="10" name="SI_ref" id="SI_ref" oldvalue="" browseobj="cari_SI_ref" />
+						<a style="display:none" class="add-on browse" id="cari_SI_ref" href="cari?ref=SI_ref&tipe=carrier_booking_air" title="Click For Search SI Ref"><i class="icon-search"></i></a>
 					</div>
 				</div>
+
 				<div class="control-group span6" style="height:15px">
 					<label class="control-label" for="quotation_ref">Quotation ref</label>
 					<div class="controls">
-						<div class="input-append"><input type="text" name="quotation_ref" id="quotation_ref" oldvalue="" browseobj="cari_quotation_ref" /><a style="display:none" class="add-on browse" id="cari_quotation_ref" href="cari?ref=quotation_ref" title="Klik untuk mencari quotation ref"><i class="icon-search"></i></a></div>
+						<div class="input-append">
+							<input type="text" name="quotation_ref" id="quotation_ref" oldvalue="" browseobj="cari_quotation_ref" />
+							<a style="display:none" class="add-on browse" id="cari_quotation_ref" href="cari?ref=quotation_ref&tipe=air_quot" title="Click for Search Quotation Reference"><i class="icon-search"></i></a></div>
 					</div>
 				</div>
 			</div>
@@ -65,7 +72,8 @@
 						<div class="control-group span6">
 							<label class="control-label" for="shipper_id">Shipper ID :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="shipper_id" id="shipper_id" oldvalue="" browseobj="cari_shipper_id" /><a style="display:none" class="add-on browse" id="cari_shipper_id" href="cari?ref=shipper_id&tipe=customer&cond1=shipper" title="Klik untuk mencari shipper id"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="shipper_id" id="shipper_id" oldvalue="" browseobj="cari_shipper_id" />
+									<a style="display:none" class="add-on browse" id="cari_shipper_id" href="cari?ref=shipper_id&tipe=customer&cond1=shipper" title="Klik untuk mencari shipper id"><i class="icon-search"></i></a></div>
 							</div>
 							<div class="controls">
 								<textarea type="text" name="keterangan_shipper" id="keterangan_shipper" class="input-xlarge" rows="3" /></textarea>
@@ -74,7 +82,8 @@
 						<div class="control-group span6">
 							<label class="control-label" for="cnee_id">Cnee ID :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="cnee_id" id="cnee_id" oldvalue="" browseobj="cari_cnee_id" /><a style="display:none" class="add-on browse" id="cari_cnee_id" href="cari?ref=cnee_id&tipe=customer&cond1=consignee" title="Klik untuk mencari consignee id"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="cnee_id" id="cnee_id" oldvalue="" browseobj="cari_cnee_id" />
+									<a style="display:none" class="add-on browse" id="cari_cnee_id" href="cari?ref=cnee_id&tipe=customer&cond1=consignee" title="Klik untuk mencari consignee id"><i class="icon-search"></i></a></div>
 							</div>
 							<div class="controls">
 								<textarea type="text" name="keterangan_cnee" id="keterangan_cnee" class="input-xlarge" rows="3" /></textarea>
@@ -247,10 +256,10 @@
 					<div class="row">
 						
 						<div class="control-group span6" style ="height:15px">
-							<label class="control-label" for="change_weight">Chg Weight :</label>
+							<label class="control-label" for="charge_weight">Chg Weight :</label>
 							<div class="controls">
-								<input type="text" style="text-align:right" name="change_weight" id="change_weight" class="currency" />
-								<select name="change_weight_type" id="change_weight_type" class="change_weight_type" style="width:80px;margin-left:0px">
+								<input type="text" style="text-align:right" name="charge_weight" id="charge_weight" class="currency" />
+								<select name="charge_weight_type" id="charge_weight_type" class="charge_weight_type" style="width:80px;margin-left:0px">
 									
 								</select>
 							</div>
@@ -301,7 +310,9 @@
 						<div class="control-group span6" style ="height:15px">
 							<label class="control-label" for="freight">Freight Term :</label>
 							<div class="controls">
-								<div class="input-append"><input style="width:110px" type="text" name="freight_term_code" id="freight_term_code" oldvalue="" browseobj="cari_freight_term_code" /><a style="display:none" class="add-on browse" id="cari_freight_term_code" href="cari?ref=freight_term_code&tipe=freight_term" title="Klik untuk mencari freight term code"><i class="icon-search"></i></a></div>
+								<div class="input-append">
+									<input style="width:110px" type="text" name="freight_term_code" id="freight_term_code" oldvalue="" browseobj="cari_freight_term_code" />
+									<a style="display:none" class="add-on browse" id="cari_freight_term_code" href="cari?ref=freight_term_code&tipe=freight_term" title="Klik untuk mencari freight term code"><i class="icon-search"></i></a></div>
 								<input type="text" readonly="readonly"  name="freight_term_name" id="freight_term_name"/>
 							</div>
 						</div>
@@ -497,7 +508,7 @@ function initializex(){
 	$( "#order_date" ).val( tanggal );
 	$("#gross_type").val($("#gross_type option:first").val());
 	$("#net_type").val($("#net_type option:first").val());
-	$("#change_weight_type").val($("change_weight_type option:first").val());
+	$("#charge_weight_type").val($("charge_weight_type option:first").val());
 	$("#rata_charge_type").val($("rata_charge_type option:first").val());
 	$("#packages_type").val($("#packages_type option:first").val());
 	$("#measurement_type").val($("#measurement_type option:first").val());
@@ -523,15 +534,15 @@ function set_weight_type(){
 						{
 							if(i==0)
 							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#change_weight_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#charge_weight_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 							}
 							else
 							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'"  >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#change_weight_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'"  >'+data[i]['description']+'</option>');
+								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#charge_weight_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 							}
 						}
 					}
@@ -583,18 +594,16 @@ function nomorbaru()
 //*****************************************************************//
 function add_row_route(i, action) {
 	var tabel = '<tr class="route-row" id="route-' + i + '">';
-	//tabel  += '<td><div class="input-append"><input style="width:100px" type="text" name="route['+i+'][routing]" id="route-'+i+'-routing" class="route-routing id detail_transaksi" oldvalue="" browseobj="cari-route-'+i+'-routing" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-route-'+i+'-routing" href="cari?ref=route-'+i+'-routing&tipe=city" title="Click for Search Routing"><i class="icon-search"></i></a></div></td>';
-	tabel += '<td><div class="input-append"><input style="width:100px" type="text" name="route['+i+'][routing]" id="route-'+i+'-routing" class="route-routing id detail_transaksi" oldvalue="" browseobj="cari-route-'+i+'-routing" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-route-'+i+'-routing" href="cari?ref=route-'+i+'-routing&tipe=city" title="Click for Search Routing"><i class="icon-search"></i></a></div></td>'; 
-	//tabel += '<td><input style ="width:100px" type="text" name="route['+i+'][airline_id]" id="route-'+i+'-airline_id" class="route-airline_id id detail_transaksi" oldvalue="" browseobj="cari-route-'+i+'-airline_id" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-route-'+i+'-airline_id" href="cari?ref=route-'+i+'-airline_id&tipe=airline" title="Click for Search Airline"><i class="icon-search"></i></a></div></td>'; 
-	tabel += '<td><input style ="width:100px" type="text" name="route['+i+'][airline_id]" id="route-'+i+'-airline_id" class="route-airline_id id detail_transaksi" oldvalue="" browseobj="cari-route-'+i+'-airline_id" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-route-'+i+'-airline_id" href="cari?ref=route-'+i+'-airline_id&tipe=airline" title="Click for Search Airline"><i class="icon-search"></i></a></div></td>';
-	tabel += '<td><input type ="text" name="route[' + i + '][airline_name]" style="text-align:right;width:100px" id="route-' + i + '-airline_name" class="route-airline_name detail_transaksi" readonly /></td>';
-	tabel += '<td><input type ="text" name="route[' + i + '][flight_no]" style="text-align:right;width:100px" id="route-' + i + '-flight_no" class="route-flight_no detail_transaksi" readonly /></td>';
-	tabel += '<td><input type ="text" name="route[' + i + '] [etd]" style="text-align:right;width:100px" id="route-' + i + '-etd" class="route-etd detail_transaksi tanggal" /></td>';
-	tabel += '<td><input type ="text" name="route[' + i + '] [eta]" style="text-align:right;width:100px" id="route-' + i + '-eta" class="route-etd detail_transaksi tanggalx tanggal" /></td>';
+	tabel  += '<td><div class="input-append"><input style="width:100px" type="text" name="route['+i+'][routing]" id="route-'+i+'-routing" class="route-routing id detail_transaksi" oldvalue="" browseobj="cari-route-'+i+'-routing" /><a style="display:none" class="add-on browse id detail_transaksi" id="cari-route-'+i+'-routing" href="cari?ref=route-'+i+'-routing&tipe=city" title="Click for Search Routing"><i class="icon-search"></i></a></div></td>';
+	tabel  += '<td><input type="text" name="route[' + i + '][airline_id]" style="text-align:right;width:100px" id="route-' + i + '-airline_id" class="route-airline_id detail_transaksi" oldvalue="" browseobj="cari-route-'+i+'-airline_id" /><a style="display:none" class="add-on browse detail_transaksi" id="cari-route-'+i+'-airline_id" href="cari?ref=route-'+i+'-airline_id&tipe=airline" title="Click for Search Airline" <i class="icon-search"></i></a></div></td>';
+	tabel  += '<td><input type="text" name="route[' + i + '][airline_name]" style="text-align:right;width:100px" id="route-' + i + '-airline_name" class="route-airline_name detail_transaksi" readonly /></td>';
+	tabel  += '<td><input type="text" name="route[' + i + '][flight_no]" style="text-align:right;width:100px" id="route-' + i + '-flight_no" class="route-flight_no detail_transaksi" readonly /></td>';
+	tabel  += '<td><input type="text" name="route[' + i + '][etd]" style="text-align:right;width:100px" id="route-' + i + '-etd" class="route-etd detail_transaksi tanggal" /></td>';
+	tabel  += '<td><input type="text" name="route[' + i + '][eta]" style="text-align:right;width:100px" id="route-' + i + '-eta" class="route-eta detail_transaksi tanggalx tanggal" /></td>';
 	if( action === 1 ){
 		tabel += '<td class="action" id="action-baris-route-'+i+'"><a href="#void()" class="tombol tombol-small hapus-baris-route detail_transaksi" id="hapus-baris-route-'+i+'"><i class="icon-remove"></i></a></td>';
 	} else tabel += '<td class="action" id="action-baris-route-'+i+'"><a href="#void()" class="tombol tombol-small tambah-baris-route detail_transaksi" id="tambah-baris-route-'+i+'"><i class="icon-plus"></i></a></td>';
-	tabel += '</tr>';
+	tabel  += '</tr>';
 	$( "#baris-route" ).val( i + 1 );
 	$('.route-etd').datepicker({
 		dateFormat: 'dd-mm-yy'
@@ -602,6 +611,7 @@ function add_row_route(i, action) {
 	$('.route-eta').datepicker({
 		dateFormat: 'dd-mm-yy'
 	});
+
 	return tabel;
 }
 
@@ -641,6 +651,24 @@ $( document ).ready( function() {
 		}
 	});
 
+	$( '#HAWB_no' ).bind( 'blur', function( ) {
+		if ($( '#HAWB_no' ).val()===''){
+
+		}else{
+			if($(this).val()!==$(this).attr('oldvalue')){
+				$.post( 'db_read_HAWB_no', { id: $( '#HAWB_no' ).val() }, function( result ){
+					if( result === '' ){
+						$( '#HAWB_no' ).val( "" );
+						var message = '<div class="alert alert-error" data-dismiss="alert"><a href="#" class="close">&times;</a><strong>Error!</strong> HAWB No Not Found.</div>';
+						$('#alert').html( message );						
+					} else {
+						
+					}
+				});
+			}
+		}
+	});
+
 	$( '#MAWB_no' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13 ){
 			e.preventDefault();
@@ -648,6 +676,24 @@ $( document ).ready( function() {
 			
 			} else {
 				$( '#SI_ref' ).focus();
+			}
+		}
+	});
+
+	$( '#MAWB_no' ).bind( 'blur', function( ) {
+		if ($( '#MAWB_no' ).val()===''){
+
+		}else{
+			if($(this).val()!==$(this).attr('oldvalue')){
+				$.post( 'db_read_MAWB_no', { id: $( '#MAWB_no' ).val() }, function( result ){
+					if( result === '' ){
+						$( '#MAWB_no' ).val( "" );
+						var message = '<div class="alert alert-error" data-dismiss="alert"><a href="#" class="close">&times;</a><strong>Error!</strong> MAWB No Not Found.</div>';
+						$('#alert').html( message );						
+					} else {
+						
+					}
+				});
 			}
 		}
 	});
@@ -664,6 +710,23 @@ $( document ).ready( function() {
 	});
 
 
+	$( '#SI_ref' ).bind( 'blur', function( ) {
+		if ($( '#SI_ref' ).val()===''){
+
+		}else{
+			if($(this).val()!==$(this).attr('oldvalue')){
+				$.post( 'db_read_SI_ref', { id: $( '#SI_ref' ).val() }, function( result ){
+					if( result === '' ){
+						$( '#SI_ref' ).val( "" );
+						var message = '<div class="alert alert-error" data-dismiss="alert"><a href="#" class="close">&times;</a><strong>Error!</strong> SI Reference Not Found.</div>';
+						$('#alert').html( message );						
+					} else {
+						$( '#SI_ref' ).val( result );
+					}
+				});
+			}
+		}
+	});
 
 	$( '#quotation_ref' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13 ){
@@ -675,6 +738,26 @@ $( document ).ready( function() {
 			}
 		}
 	});
+
+	$( '#quotation_ref' ).bind( 'blur', function( ) {
+		if ($( '#quotation_ref' ).val()===''){
+
+		}else{
+			if($(this).val()!==$(this).attr('oldvalue')){
+				$.post( 'db_read_quotation_ref', { id: $( '#quotation_ref' ).val() }, function( result ){
+					if( result === '' ){
+						$( '#quotation_ref' ).val( "" );
+						var message = '<div class="alert alert-error" data-dismiss="alert"><a href="#" class="close">&times;</a><strong>Error!</strong> Sea Quotation Reference Not Found.</div>';
+						$('#alert').html( message );						
+					} else {
+						$( '#quotation_ref' ).val( result );
+					}
+				});
+			}
+		}
+	});
+
+
 
 	////////////////////////////////////////////////////////////////
 	//
@@ -861,13 +944,13 @@ $( document ).ready( function() {
 			if( $( this ).val() === '' ){
 
 			} else {
-				$( '#change_weight')
+				$( '#charge_weight')
 			}
 		}
 	});
 
 
-	$( 'change_weight' ).bind( 'keydown', function( e ) {
+	$( 'charge_weight' ).bind( 'keydown', function( e ) {
 		if ( e.which === 13){
 			e.preventDefault();
 			if( $( this ).val() === '' ){
@@ -914,7 +997,6 @@ $( document ).ready( function() {
 						$( "#commodity_code" ).val( '' );
 						$( '#commodity_code' ).focus();
 					} else {
-					
 						$( "#commodity_name" ).val( result );
 					}
 				});
@@ -1093,7 +1175,6 @@ $( document ).ready( function() {
 			setfocus(Number(num),'routing','route');
 		}
 	});
-
 
 	$( '#port_kode_loading' ).bind( 'blur', function( ) {
 		if ($( this ).val()===''){
@@ -1362,7 +1443,7 @@ $( document ).ready( function() {
 		var num = asal.split( '-' )[ 1 ];
 		if ( e.which === 13 ){
 			e.preventDefault;
-			setfocus(Number(num),'airline_name','route');
+			setfocus(Number(num),'etd','route');
 		}else if ( e.which === 40 ){
 			e.preventDefault;
 			setfocus(Number(num)+1,'airline_id','route');	
@@ -1374,67 +1455,12 @@ $( document ).ready( function() {
 			var textLength = textBox.value.length;			
 			if (($(this).val()==='') || (getselectedtext($( this ).attr( 'id' ))==textBox.value) || ($(this).caret().start===textBox.value.length)){
 			e.preventDefault();
-				setfocus(Number(num),'airline_name','route');
-			}
-		}else if ( e.which === 37 ){
-			if ($(this).caret().start===0){
-			e.preventDefault();
-				setfocus((Number(num)),'routing','route');
-			}
-		}
-	});
-
-	$( '.route-airline_name' ).live( 'keydown', function( e ){
-	
-		var asal = $( this ).attr( 'id' );
-		var num = asal.split( '-' )[ 1 ];
-		if ( e.which === 13 ){
-			e.preventDefault;
-			setfocus(Number(num),'flight_no','route');
-		}else if ( e.which === 40 ){
-			e.preventDefault;
-			setfocus(Number(num)+1,'airline_name','route');
-		}else if ( e.which === 38 ){
-			e.preventDefault;
-			setfocus2(Number(num),'airline_name','route');
-		}else if ( e.which === 39 ){
-			var textBox = document.getElementById($( this ).attr( 'id' ));
-			var textLength = textBox.value.length;			
-			if (($(this).val()==='') || (getselectedtext($( this ).attr( 'id' ))==textBox.value) || ($(this).caret().start===textBox.value.length)){
-			e.preventDefault();
-				setfocus(Number(num),'flight_no','route');
-			}
-		}else if ( e.which === 37 ){
-			if ($(this).caret().start===0){
-			e.preventDefault();
-				setfocus((Number(num)),'airline_id','route');
-			}
-		}
-	});
-	$( '.route-flight_no' ).live( 'keydown', function( e ){
-	
-		var asal = $( this ).attr( 'id' );
-		var num = asal.split( '-' )[ 1 ];
-		if ( e.which === 13 ){
-			e.preventDefault;
-			setfocus(Number(num),'etd','route');
-		}else if ( e.which === 40 ){
-			e.preventDefault;
-			setfocus(Number(num)+1,'flight_no','route');
-		}else if ( e.which === 38 ){
-			e.preventDefault;
-			setfocus2(Number(num),'flight_no','route');
-		}else if ( e.which === 39 ){
-			var textBox = document.getElementById($( this ).attr( 'id' ));
-			var textLength = textBox.value.length;			
-			if (($(this).val()==='') || (getselectedtext($( this ).attr( 'id' ))==textBox.value) || ($(this).caret().start===textBox.value.length)){
-			e.preventDefault();
 				setfocus(Number(num),'etd','route');
 			}
 		}else if ( e.which === 37 ){
 			if ($(this).caret().start===0){
 			e.preventDefault();
-				setfocus((Number(num)),'airline_name','route');
+				setfocus((Number(num)),'routing','route');
 			}
 		}
 	});
@@ -1462,7 +1488,7 @@ $( document ).ready( function() {
 		}else if ( e.which === 37 ){
 			if ($(this).caret().start===0){
 			e.preventDefault();
-				setfocus((Number(num)),'flight_no','route');
+				setfocus((Number(num)),'airline_id','route');
 			}
 		}
 	});
@@ -1587,8 +1613,10 @@ $( document ).ready( function() {
 					$( "#net_type" ).val( data[ 'net_weight_type' ] );
 					$( "#measurement_number" ).val( parseFloat( data[ 'measurement' ] ) ).formatCurrency({ colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2 });
 					$( "#measurement_type" ).val( data[ 'measurement_type' ] );
-					$( "#change_weight" ).val( parseFloat( data[ 'change_weight' ] ) ).formatCurrency({ colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2 });
-					$( "#change_weight_type" ).val( data[ 'change_weight_type' ] );
+					$( "#charge_weight" ).val( parseFloat( data[ 'charge_weight' ] ) ).formatCurrency({ colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2 });
+					$( "#charge_weight_type" ).val( data[ 'charge_weight_type' ] );
+					$( "#rata_charge" ).val( parseFloat( data[ 'rata_charge' ] ) ).formatCurrency({ colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2 });
+					$( "#rata_charge_type" ).val( data[ 'rata_charge_type' ] );
 					$( "#total" ).val( parseFloat( data[ 'total' ] ) ).formatCurrency({ colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2 });					
 					$( "#commodity_code" ).val( data['commodity_code'] );
 					$( "#commodity_name" ).val( data['commodity_description'] );

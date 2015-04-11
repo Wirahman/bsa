@@ -26,6 +26,10 @@
 							<li><a href="<?php echo base_url('master/guest_book'); ?>" target="Guest_book">Buku Tamu</a></li>
 							<?php } ?>
 							
+							<?php if( in_array( 'read_capasity', $cap ) ){ ?>
+							<li><a href="<?php echo base_url('master/capasity'); ?>" target="Capasity">Capasity</a></li>
+							<?php } ?>
+							
 							<?php if( in_array( 'read_city', $cap ) ){ ?>
 							<li><a href="<?php echo base_url('master/city'); ?>" target="City">City</a></li>
 							<?php } ?>
@@ -208,6 +212,32 @@
 							</li>
 
 							<li class="dropdown-submenu">
+								<a href="#stock">Gross Profit Export</a>
+								<ul class="dropdown-menu submenu-show submenu-hide">
+								<?php if( in_array( 'read_air_export_master', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/air_gross_profit_export'); ?>" target="Gross Profit Export (Air)">Gross Profit Export (Air)</a></li>
+									<?php }
+                                     if( in_array( 'read_sea_export_master', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/sea_gross_profit_export'); ?>" target="Gross Profit Export (Sea)">Gross Profit Export (Sea)</a></li>
+									<?php }
+                                     ?> 
+									 </ul>
+							</li>
+
+							<li class="dropdown-submenu">
+								<a href="#stock">Gross Profit Import</a>
+								<ul class="dropdown-menu submenu-show submenu-hide">
+								<?php if( in_array( 'read_air_export_master', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/air_gross_profit_import'); ?>" target="Gross Profit Import (Air)">Gross Profit Import (Air)</a></li>
+									<?php }
+                                     if( in_array( 'read_sea_export_master', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/sea_gross_profit_import'); ?>" target="Gross Profit Import (Sea)">Gross Profit Import (Sea)</a></li>
+									<?php }
+                                     ?> 
+									 </ul>
+							</li>
+
+							<li class="dropdown-submenu">
 								<a href="#stock">Import Master</a>
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_air_import_master', $cap ) ){ ?>
@@ -228,6 +258,32 @@
 									<?php }
                                      if( in_array( 'read_shipment_inbound_entry_sea', $cap ) ){ ?>
 									<li><a href="<?php echo base_url('transaksi/shipment_inbound_entry_sea'); ?>" target="Shipment Inbound Entry(Sea)">Shipment Inbound Entry (Sea)</a></li>
+									<?php }
+                                     ?> 
+									 </ul>
+							</li>
+
+							<li class="dropdown-submenu">
+								<a href="#stock">Invoice Ar</a>
+								<ul class="dropdown-menu submenu-show submenu-hide">
+								<?php if( in_array( 'read_air_export_master', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/air_invoice_ar'); ?>" target="Invoice Ar (Air)">Invoice Ar (Air)</a></li>
+									<?php }
+                                     if( in_array( 'read_sea_export_master', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/sea_invoice_ar'); ?>" target="Invoice Ar (Sea)">Invoice Ar (Sea)</a></li>
+									<?php }
+                                     ?> 
+									 </ul>
+							</li>
+
+							<li class="dropdown-submenu">
+								<a href="#stock">Invoice Ap</a>
+								<ul class="dropdown-menu submenu-show submenu-hide">
+								<?php if( in_array( 'read_air_export_master', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/air_invoice_ap'); ?>" target="Invoice Ap (Air)">Invoice Ap (Air)</a></li>
+									<?php }
+                                     if( in_array( 'read_sea_export_master', $cap ) ){ ?>
+									<li><a href="<?php echo base_url('transaksi/sea_invoice_ap'); ?>" target="Invoice Ap (Sea)">Invoice Ap (Sea)</a></li>
 									<?php }
                                      ?> 
 									 </ul>

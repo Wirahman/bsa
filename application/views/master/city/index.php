@@ -78,7 +78,7 @@ function initializex(){
 	$('.cetak').attr('href', 'cetak');
 	show_user_name('');
 }	
-preventempty="city_code, city_name";
+preventempty="city_code,city_name";
 preventemptystatus="1,1";
 $( document ).ready( function() {
 

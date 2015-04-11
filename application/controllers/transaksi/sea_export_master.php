@@ -59,8 +59,8 @@ public function cari()
 	public function db_read_all_weight()
 	{
 		if ($this->tank_auth->is_logged_in()) {
-			$this->load->model( 'Munit', 'munit' );
-			$weight_type = $this->munit->all();
+			$this->load->model( 'Mcapasity', 'mcapasity' );
+			$weight_type = $this->mcapasity->all();
 			if(!empty($weight_type))
 			{
 				echo serialize($weight_type);
@@ -259,16 +259,25 @@ public function cari()
 		}
 	}
 
-public function db_sea_export_master()
-{
-	if ($this->tank_auth->is_logged_in()){
-		if( isset( $_POST[ 'key' ])){
-			$this->load->model( 'Search', 'search');
-			$export = $this->search->search_sea_export_master( $_POST['key']);
-			echo serialize($export);
+	public function db_lastid()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'tanggal' ] ) ){
+				echo $this->tsea_export_master->lastid( $_POST['tanggal'] );
+			}
 		}
 	}
-}
+
+	public function db_sea_export_master()
+	{
+		if ($this->tank_auth->is_logged_in()){
+			if( isset( $_POST[ 'key' ])){
+				$this->load->model( 'Search', 'search');
+				$export = $this->search->search_sea_export_master( $_POST['key']);
+				echo serialize($export);
+			}
+		}
+	}
 
 public function db_create()
 {

@@ -60,8 +60,8 @@ class Sea_import_master extends CI_Controller {
 	public function db_read_all_weight()
 	{
 		if ($this->tank_auth->is_logged_in()) {
-			$this->load->model( 'Munit', 'munit' );
-			$weight_type = $this->munit->all();
+			$this->load->model( 'Mcapasity', 'mcapasity' );
+			$weight_type = $this->mcapasity->all();
 			if(!empty($weight_type))
 			{
 				echo serialize($weight_type);
@@ -253,6 +253,15 @@ class Sea_import_master extends CI_Controller {
 				$this->load->model( 'Search', 'search');
 				$tbooking_cargo_sea = $this->search->search_booking_cargo_sea( $_POST['key']);
 				echo serialize( $tbooking_cargo_sea );
+			}
+		}
+	}
+
+	public function db_lastid()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'tanggal' ] ) ){
+				echo $this->tsea_import_master->lastid( $_POST['tanggal'] );
 			}
 		}
 	}

@@ -7,6 +7,8 @@ class Booking_cargo_air extends CI_Controller {
 		parent::__construct();
 		$this->load->model( 'Tbooking_cargo_air', 'tbooking_cargo_air' );
 		$this->load->model( 'Tbooking_cargo_air_route', 'tbooking_cargo_air_route' );
+		$this->load->model( 'Tcarrier_booking_air', 'tcarrier_booking_air');
+		$this->load->model( 'Air_quot', 'air_quot');
 		$this->load->model( 'Search', 'search' );
 		$this->load->model( 'Searchtrn', 'searchtrn' );
 		$this->load->model( 'Mcustomer', 'mcustomer' );
@@ -58,8 +60,8 @@ class Booking_cargo_air extends CI_Controller {
 	public function db_read_all_weight()
 	{
 		if ($this->tank_auth->is_logged_in()) {
-			$this->load->model( 'Munit', 'munit' );
-			$weight_type = $this->munit->all();
+			$this->load->model( 'Mcapasity', 'mcapasity' );
+			$weight_type = $this->mcapasity->all();
 			if(!empty($weight_type))
 			{
 				echo serialize($weight_type);
@@ -242,6 +244,146 @@ class Booking_cargo_air extends CI_Controller {
 		}
 	}
 
+	public function db_air_import_master()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'key' ])){
+				$hasil = $this->search->search_air_import_master( $_POST['key'], true );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function load_air_import_master()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$this->load->model( 'Tair_import_master', 'tair_import_master' );
+				$hasil = $this->tair_import_master->read( $_POST['id'] );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function db_read_HAWB_no()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$hasil=$this->tair_import_master->read( $_POST['id']);
+				if (!empty($hasil)){
+					echo $hasil['MAWB_no'];
+				}else{
+					echo '';
+				}
+			}
+		}
+	}
+
+	public function db_air_export_master()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'key' ])){
+				$hasil = $this->search->search_air_export_master( $_POST['key'], true );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function load_air_export_master()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$this->load->model( 'Tair_export_master', 'tair_export_master' );
+				$hasil = $this->tair_export_master->read( $_POST['id'] );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function db_read_MAWB_no()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$hasil=$this->tair_export_master->read( $_POST['id']);
+				if (!empty($hasil)){
+					echo $hasil['MAWB_no'];
+				}else{
+					echo '';
+				}
+			}
+		}
+	}
+
+	public function db_carrier_booking_air()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'key' ])){
+				$hasil = $this->search->search_carrier_booking_air( $_POST['key'], true );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function load_carrier_booking_air()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$this->load->model( 'Tcarrier_booking_air', 'tcarrier_booking_air' );
+				$hasil = $this->tcarrier_booking_air->read( $_POST['id'] );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function db_read_SI_ref()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$hasil=$this->tcarrier_booking_air->read( $_POST['id']);
+				if (!empty($hasil)){
+					echo $hasil['reference'];
+				}else{
+					echo '';
+				}
+			}
+		}
+	}
+
+	public function db_air_quotation()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'key' ])){
+				$hasil = $this->search->search_air_quot( $_POST['key'], true );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function load_air_quotation()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$this->load->model( 'Air_quot', 'air_quot' );
+				$hasil = $this->air_quot->read( $_POST['id'] );
+				echo serialize( $hasil );
+			}
+		}
+	}
+
+	public function db_read_quotation_ref()
+	{
+		if ($this->tank_auth->is_logged_in()) {
+			if( isset( $_POST[ 'id' ])){
+				$hasil=$this->air_quot->read( $_POST['id']);
+				if (!empty($hasil)){
+					echo $hasil['re'];
+				}else{
+					echo '';
+				}
+			}
+		}
+	}
+
 	public function db_booking_cargo_air()
 	{
 		if ($this->tank_auth->is_logged_in()) {
@@ -252,8 +394,6 @@ class Booking_cargo_air extends CI_Controller {
 			}
 		}
 	}
-
-
 
 	public function db_lastid()
 	{
@@ -363,8 +503,8 @@ class Booking_cargo_air extends CI_Controller {
 					$data['net_weight_type'] = $_POST['net_type'];
 					$data['measurement'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['measurement_number'] ) );
 					$data['measurement_type'] = $_POST['measurement_type'];
-					$data['change_weight'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['change_weight'] ) );
-					$data['change_weight_type'] = $_POST['change_weight_type'];
+					$data['charge_weight'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['charge_weight'] ) );
+					$data['charge_weight_type'] = $_POST['charge_weight_type'];
 					$data['rata_charge'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['rata_charge'] ) );
 					$data['rata_charge_type'] = $_POST['rata_charge_type'];
 					$data['total'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['total'] ) );
@@ -387,12 +527,12 @@ class Booking_cargo_air extends CI_Controller {
 					$hasil=$this->tbooking_cargo_air->create( $data );
 					if ($hasil=='ada'){
 						$resulttrn['status']='Error';
-						$resulttrn['ket']='Data Already exist.';
+						$resulttrn['ket']='Data Already Exist.';
 					}elseif ($hasil=='1'){
 						$hasil=true;
 						$this->tbooking_cargo_air_route->clean( $_POST['order_no']);
 						if (isset($booking_cargo_route) && !empty($booking_cargo_route)){
-							if (!$this->tbooking_cargo_sea_route->create( $booking_cargo_route )){
+							if (!$this->tbooking_cargo_air_route->create( $booking_cargo_route )){
 								$hasil=false;
 							}
 						}
@@ -541,8 +681,8 @@ class Booking_cargo_air extends CI_Controller {
 					$data['net_weight_type'] = $_POST['net_type'];
 					$data['measurement'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['measurement_number'] ) );
 					$data['measurement_type'] = $_POST['measurement_type'];
-					$data['change_weight'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['change_weight'] ) );
-					$data['change_weight_type'] = $_POST['change_weight_type'];
+					$data['charge_weight'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['charge_weight'] ) );
+					$data['charge_weight_type'] = $_POST['charge_weight_type'];
 					$data['rata_charge'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['rata_charge'] ) );
 					$data['rata_charge_type'] = $_POST['rata_charge_type'];
 					$data['total'] = floatval( preg_replace( "/[^0-9.]/", "", $_POST['total'] ) );
