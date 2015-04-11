@@ -51,13 +51,8 @@ class Air_export_master extends CI_Controller{
 	public function db_read_all_weight()
 	{
 		if ($this->tank_auth->is_logged_in()) {
-<<<<<<< HEAD
 			$this->load->model( 'Mcapasity', 'mcapasity' );
 			$weight_type = $this->mcapasity->all();
-=======
-			$this->load->model( 'Munit', 'munit' );
-			$weight_type = $this->munit->all();
->>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 			if(!empty($weight_type))
 			{
 				echo serialize($weight_type);
