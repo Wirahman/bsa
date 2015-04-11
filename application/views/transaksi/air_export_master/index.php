@@ -494,7 +494,6 @@ function set_weight_type(){
 						{
 							if(i==0)
 							{
-<<<<<<< HEAD
 								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 								$('#charge_weight_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
@@ -504,17 +503,6 @@ function set_weight_type(){
 								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'"  >'+data[i]['description']+'</option>');
 								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 								$('#charge_weight_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-=======
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#charge_weight_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-							}
-							else
-							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'"  >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#charge_weight_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
->>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 							}
 						}
 					}

@@ -203,7 +203,6 @@
 								<ul class="dropdown-menu submenu-show submenu-hide">
 								<?php if( in_array( 'read_air_export_master', $cap ) ){ ?>
 									<li><a href="<?php echo base_url('transaksi/air_export_master'); ?>" target="Export Master (Air)">Export Master (Air)</a></li>
-<<<<<<< HEAD
 									<?php }
                                      if( in_array( 'read_sea_export_master', $cap ) ){ ?>
 									<li><a href="<?php echo base_url('transaksi/sea_export_master'); ?>" target="Export Master (Sea)">Export Master (Sea)</a></li>
@@ -233,11 +232,6 @@
 									<?php }
                                      if( in_array( 'read_sea_export_master', $cap ) ){ ?>
 									<li><a href="<?php echo base_url('transaksi/sea_gross_profit_import'); ?>" target="Gross Profit Import (Sea)">Gross Profit Import (Sea)</a></li>
-=======
-									<?php }
-                                     if( in_array( 'read_sea_export_master', $cap ) ){ ?>
-									<li><a href="<?php echo base_url('transaksi/sea_export_master'); ?>" target="Export Master (Sea)">Export Master (Sea)</a></li>
->>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 									<?php }
                                      ?> 
 									 </ul>
@@ -264,7 +258,6 @@
 									<?php }
                                      if( in_array( 'read_shipment_inbound_entry_sea', $cap ) ){ ?>
 									<li><a href="<?php echo base_url('transaksi/shipment_inbound_entry_sea'); ?>" target="Shipment Inbound Entry(Sea)">Shipment Inbound Entry (Sea)</a></li>
-<<<<<<< HEAD
 									<?php }
                                      ?> 
 									 </ul>
@@ -291,8 +284,6 @@
 									<?php }
                                      if( in_array( 'read_sea_export_master', $cap ) ){ ?>
 									<li><a href="<?php echo base_url('transaksi/sea_invoice_ap'); ?>" target="Invoice Ap (Sea)">Invoice Ap (Sea)</a></li>
-=======
->>>>>>> 7a6ab39cfd5560f13973f69dc48fa0dada02ad42
 									<?php }
                                      ?> 
 									 </ul>
