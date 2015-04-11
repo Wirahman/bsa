@@ -553,15 +553,6 @@ $cap = unserialize( $user_cap );
 			</tr>
 			
 			<tr>
-				<td>Air Export Master</td>
-				<td><input type="checkbox" name="capabilities[]" value="create_air_export_master" <?php echo ( in_array( 'create_air_export_master', $cap ) ) ? 'checked' : ''; ?> class="create transaksi air_export_master" /></td>
-				<td><input type="checkbox" name="capabilities[]" value="read_air_export_master" <?php echo ( in_array( 'read_air_export_master', $cap ) ) ? 'checked' : ''; ?> class="read transaksi air_export_master" /></td>
-				<td><input type="checkbox" name="capabilities[]" value="update_air_export_master" <?php echo ( in_array( 'update_air_export_master', $cap ) ) ? 'checked' : ''; ?> class="update transaksi air_export_master" /></td>
-				<td><input type="checkbox" name="capabilities[]" value="delete_air_export_master" <?php echo ( in_array( 'delete_air_export_master', $cap ) ) ? 'checked' : ''; ?> class="delete transaksi air_export_master" /></td>
-				<td><input type="checkbox" class="all" id="air_export_master" /></td>
-			</tr>
-
-			<tr>
 				<td>Sea Export Master</td>
 				<td><input type="checkbox" name="capabilities[]" value="create_sea_export_master" <?php echo ( in_array( 'create_sea_export_master', $cap ) ) ? 'checked' : ''; ?> class="create transaksi sea_export_master" /></td>
 				<td><input type="checkbox" name="capabilities[]" value="read_sea_export_master" <?php echo ( in_array( 'read_sea_export_master', $cap ) ) ? 'checked' : ''; ?> class="read transaksi sea_export_master" /></td>
@@ -632,7 +623,6 @@ $cap = unserialize( $user_cap );
 				<td><input type="checkbox" name="capabilities[]" value="delete_shipment_inbound_entry_sea" <?php echo ( in_array( 'delete_shipment_inbound_entry_sea', $cap ) ) ? 'checked' : ''; ?> class="delete transaksi shipment_inbound_entry_sea" /></td>
 				<td><input type="checkbox" class="all" id="shipment_inbound_entry_sea" /></td>
 			</tr>
-
 
 			<tr>
 				<td>Sea Quotation</td>
