@@ -43,6 +43,18 @@ class Search extends CI_Model {
 		$query = $this->db->query($sql,array());
 		return $query->result_array();
 	}
+
+	function search_airline( $key = '' )
+	{
+		$sql="select * from gl_airline ";
+		if( $key!=''){
+			$sql.="where gl_airline.airline_id like '". $key ."%' or gl_airline.airline_name like '". $key ."%'";
+		}
+		$sql.="order by airline_id";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
 	
 	function search_air_quot( $key = '' )
 	{
@@ -56,6 +68,19 @@ class Search extends CI_Model {
 		return $query->result_array();
 	}
 	
+	function search_booking_cargo_air( $key = '' )
+	{
+		$sql="select * from gl_booking_cargo_air ";
+		if( $key!='' ){
+			$sql.="where (gl_booking_cargo_air.order_no like '". $key ."%' or  gl_booking_cargo_air.order_no like '". $key ."%') ";
+		}
+
+		$sql.="order by order_no";
+		$sql.=" limit ".$this->setlimit;
+		$query = $this->db->query($sql,array());
+		return $query->result_array();
+	}
+
 	function search_booking_cargo_sea( $key = '' )
 	{
 		$sql="select * from gl_booking_cargo_sea ";

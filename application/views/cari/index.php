@@ -75,12 +75,24 @@ if ($('#tipe').val()=='air'){
 	xalign="";
 	xfield="port_kode;port_name;country_code;region_code";
 	xfunction_name="db_airport";
+}else if ($('#tipe').val()=='airline'){
+	xlebar="100px;150px;200px";
+	xjudul="Airline ID; Airline Name; Flight No.";
+	xalign="";
+	xfield="airline_id;airline_name;flight_no";
+	xfunction_name="db_airline";
 }else if  ($('#tipe').val()=='air_quot'){
 	xlebar="100px;350px;400px;450px";
 	xjudul="Quotation;Date;Attn;Re;Regards;Valid From;Valid Until;Customer ID; Customer Name; Sales Code; Sales Name; Term and Condition; Sales Notes; Manager Notes; Director Notes";
 	xalign="";
 	xfield="quot_id;date;attn;re;regards;valid_from;valid_until;cus_id;customer_name;sales_code;sales_name;term_cond;sales_note;manager_note;director_note";
 	xfunction_name="db_air_quotation";
+}else if($('#tipe').val()=='booking_cargo_air'){
+	xlebar="100px;150px";
+	xjudul="Order No; Order Date";
+	xalign="";
+	xfield="order_no;order_date";
+	xfunction_name="db_booking_cargo_air";
 }else if($('#tipe').val()=='booking_cargo_sea'){
 	xlebar="100px;100px";
 	xjudul="Order No;Order Date";

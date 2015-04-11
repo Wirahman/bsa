@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Tbooking_cargo_sea_routing extends CI_Model {
+class Tbooking_cargo_air_route extends CI_Model {
 
 	function __construct()
 	{
@@ -19,7 +19,7 @@ class Tbooking_cargo_sea_routing extends CI_Model {
 	 */
 	function create( $data )
 	{
-		return $this->db->insert_batch('booking_cargo_air_routing', $data);
+		return $this->db->insert_batch('booking_cargo_air_route', $data);
 	}
 
 
@@ -33,7 +33,7 @@ class Tbooking_cargo_sea_routing extends CI_Model {
 	function load( $order_no)
 	{
 		$this->db->where('order_no', $order_no);
-		$query = $this->db->get('booking_cargo_air_routing');
+		$query = $this->db->get('booking_cargo_air_route');
 		if( $query->num_rows > 0){
 			return $query->result_array();
 		} else {
@@ -50,7 +50,7 @@ class Tbooking_cargo_sea_routing extends CI_Model {
 	function clean( $order_no )
 	{
 		$this->db->where('order_no', $order_no);
-		return $this->db->delete('booking_cargo_air_routing');
+		return $this->db->delete('booking_cargo_air_route');
 		// return $this->db->affected_rows() > 0;
 	}
 
