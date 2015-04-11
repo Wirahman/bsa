@@ -117,8 +117,8 @@
 						<tbody id="transaksix">
 						</tbody>
 					</table>
+						</div>
 					</div>
-				</div>
 				</div>
 				
 				<div class="span12 tab-pane notes" style="height:300px;width:1300px" id="notes">	

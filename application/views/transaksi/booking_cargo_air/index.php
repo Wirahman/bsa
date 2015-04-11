@@ -72,7 +72,8 @@
 						<div class="control-group span6">
 							<label class="control-label" for="shipper_id">Shipper ID :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="shipper_id" id="shipper_id" oldvalue="" browseobj="cari_shipper_id" /><a style="display:none" class="add-on browse" id="cari_shipper_id" href="cari/ref/shipper_id/tipe/customer/cond1/shipper" title="Klik untuk mencari shipper id"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="shipper_id" id="shipper_id" oldvalue="" browseobj="cari_shipper_id" />
+									<a style="display:none" class="add-on browse" id="cari_shipper_id" href="cari/ref/shipper_id/tipe/customer/cond1/shipper" title="Klik untuk mencari shipper id"><i class="icon-search"></i></a></div>
 							</div>
 							<div class="controls">
 								<textarea type="text" name="keterangan_shipper" id="keterangan_shipper" class="input-xlarge" rows="3" /></textarea>
@@ -81,7 +82,8 @@
 						<div class="control-group span6">
 							<label class="control-label" for="cnee_id">Cnee ID :</label>
 							<div class="controls">
-								<div class="input-append"><input type="text" name="cnee_id" id="cnee_id" oldvalue="" browseobj="cari_cnee_id" /><a style="display:none" class="add-on browse" id="cari_cnee_id" href="cari/ref/cnee_id/tipe/customer/cond1/consignee" title="Klik untuk mencari consignee id"><i class="icon-search"></i></a></div>
+								<div class="input-append"><input type="text" name="cnee_id" id="cnee_id" oldvalue="" browseobj="cari_cnee_id" />
+									<a style="display:none" class="add-on browse" id="cari_cnee_id" href="cari/ref/cnee_id/tipe/customer/cond1/consignee" title="Klik untuk mencari consignee id"><i class="icon-search"></i></a></div>
 							</div>
 							<div class="controls">
 								<textarea type="text" name="keterangan_cnee" id="keterangan_cnee" class="input-xlarge" rows="3" /></textarea>
@@ -308,7 +310,9 @@
 						<div class="control-group span6" style ="height:15px">
 							<label class="control-label" for="freight">Freight Term :</label>
 							<div class="controls">
-								<div class="input-append"><input style="width:110px" type="text" name="freight_term_code" id="freight_term_code" oldvalue="" browseobj="cari_freight_term_code" /><a style="display:none" class="add-on browse" id="cari_freight_term_code" href="cari/ref/freight_term_code/tipe/freight_term" title="Klik untuk mencari freight term code"><i class="icon-search"></i></a></div>
+								<div class="input-append">
+									<input style="width:110px" type="text" name="freight_term_code" id="freight_term_code" oldvalue="" browseobj="cari_freight_term_code" />
+									<a style="display:none" class="add-on browse" id="cari_freight_term_code" href="cari/ref/freight_term_code/tipe/freight_term" title="Klik untuk mencari freight term code"><i class="icon-search"></i></a></div>
 								<input type="text" readonly="readonly"  name="freight_term_name" id="freight_term_name"/>
 							</div>
 						</div>
@@ -530,15 +534,15 @@ function set_weight_type(){
 						{
 							if(i==0)
 							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#charge_weight_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#charge_weight_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 							}
 							else
 							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'"  >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#charge_weight_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'"  >'+data[i]['description']+'</option>');
+								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#charge_weight_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 							}
 						}
 					}
@@ -993,7 +997,6 @@ $( document ).ready( function() {
 						$( "#commodity_code" ).val( '' );
 						$( '#commodity_code' ).focus();
 					} else {
-					
 						$( "#commodity_name" ).val( result );
 					}
 				});

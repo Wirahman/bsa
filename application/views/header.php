@@ -7,7 +7,7 @@
 		<?php echo ( isset( $title ) ) ? $title . ' | PT. Bina Sinar Amity' : ' | PT. Bina Sinar Amity'; ?>
 		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="PT. Binar Sinar Amity">
+		<meta name="description" content="PT. Bina Sinar Amity">
 		<meta name="author" content="Migent | Migent Software Jakarta">
 		<meta name='robots' content='noindex,nofollow' />
 

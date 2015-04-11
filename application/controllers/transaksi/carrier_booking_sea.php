@@ -51,8 +51,8 @@ class Carrier_booking_sea extends CI_Controller {
 	public function db_read_all_weight()
 	{
 		if ($this->tank_auth->is_logged_in()) {
-			$this->load->model( 'Munit', 'munit' );
-			$weight_type = $this->munit->all();
+			$this->load->model( 'Mcapasity', 'mcapasity' );
+			$weight_type = $this->mcapasity->all();
 			if(!empty($weight_type))
 			{
 				echo serialize($weight_type);

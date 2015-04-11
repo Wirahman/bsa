@@ -466,8 +466,8 @@ function initializex(){
 	nomorbaru();
 }
 
-//preventempty="si_no,order_date,HBL_no,OBL_no,SI_ref,quotation_ref";
-//preventemptystatus="1,1,1,1,1,1";
+preventempty="si_no,order_date,HBL_no,OBL_no,SI_ref,quotation_ref";
+preventemptystatus="1,1,1,1,1,1";
 //*****************************************************************//
 //
 // Tambah pilihan kg sesuai database
@@ -484,13 +484,13 @@ function set_weight_type(){
 						{
 							if(i==0)
 							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 							}
 							else
 							{
-								$('#gross_type').append('<option value="'+data[i]['unit_code']+'"  >'+data[i]['description']+'</option>');
-								$('#net_type').append('<option value="'+data[i]['unit_code']+'" selected="selected" >'+data[i]['description']+'</option>');
+								$('#gross_type').append('<option value="'+data[i]['capasity_code']+'"  >'+data[i]['description']+'</option>');
+								$('#net_type').append('<option value="'+data[i]['capasity_code']+'" selected="selected" >'+data[i]['description']+'</option>');
 							}
 						}
 					}
