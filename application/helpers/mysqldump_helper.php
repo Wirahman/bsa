@@ -33,7 +33,7 @@ if (!function_exists('mysqldump')) {
 			$command .= ' --no-data';
 		}
 
-		$command .= ' ' . $database;
+		$command .= ' --add-drop-table=false ' . $database;
 
 		$output = array ();
 		$return = null;
