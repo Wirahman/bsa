@@ -8,7 +8,7 @@ if (!function_exists('mysqldump')) {
 			throw new Exception($tmpDir . ' is not writeable.');
 		}
 
-		$configFileName = $tmpDir . DIRECTORY_SEPARATOR . 'my.cnf.tmp';
+		$configFileName = $tmpDir . DIRECTORY_SEPARATOR . uniqid('my.cnf.', TRUE) . '.tmp';
 
 		if (file_put_contents($configFileName, '') === false) {
 			throw new Exception('Failed to write file: ' . $configFileName);
