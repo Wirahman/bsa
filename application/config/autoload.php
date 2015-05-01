@@ -80,7 +80,7 @@ $autoload['helper'] = array('url', 'cari', 'mysqldump');
 |
 */
 
-$autoload['config'] = array();
+$autoload['config'] = array('mysqldump');
 
 
 /*
