@@ -20,7 +20,7 @@ class Mysqldump extends CI_Controller {
 			$this->config->item('mysqldump_dump_data'));
 
 		$this->output->set_content_type('text/plain');
-		$this->output->set_header("Content-disposition: attachment; filename=\"" . $fileName . ".sql\"");
+		$this->output->set_header("Content-Disposition: attachment; filename=\"" . $fileName . ".sql\"");
 		$this->output->set_output($data);
 	}
 }
