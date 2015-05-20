@@ -1,0 +1,18 @@
+/* background utama */
+body {
+	background-color: pink;
+	background-image: none; /* background-image: url('file/gambar/untuk/background.jpg'); */
+}
+
+/* welcome message */
+.hero-unit {
+	background-color: magenta;
+	background-image: none; /* background-image: url('file/gambar/untuk/background.jpg'); */
+}
+
+/* menu */
+.navbar .navbar-inner {
+	background-color: blue;
+	background-image: none; /* background-image: url('file/gambar/untuk/background.jpg'); */
+}
+
