@@ -313,6 +313,7 @@
 							<?php if( in_array( 'read_user', $cap ) ){ ?>
 							<li><a href="<?php echo site_url('fasilitas/user'); ?>" target="User">User</a></li>
 							<?php } ?>
+							<li><a href="<?php echo site_url('fasilitas/mysqldump'); ?>" target="_blank">mysqldump</a></li>
 						</ul>
 					</li>
 					<?php } ?>
